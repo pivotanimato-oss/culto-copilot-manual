@@ -101,9 +101,12 @@ Como fica o domingo:
 5. **Fim da live**: a despedida (*"a graça do Senhor Jesus Cristo… comunhão"*, *"Deus abençoe, abraça a pessoa do
    seu lado"*, *"até amanhã"*, junto com *"shalom, shalom"*), só depois de **1h30 de culto**, **arma** o fim. A live
    termina (cena do fim e, 2 min depois, a transmissão para) quando o culto acabou mesmo:
-   - com a câmera **Fechada** (a do pregador): o **pregador desceu do púlpito** (1 min sem ninguém) e ninguém está
-     mais falando; aí vale até a despedida sem "shalom";
-   - sem essa câmera: **3 min sem fala** depois da despedida (só música ou silêncio).
+   - com a câmera **Fechada** (a do pregador): o **pregador desceu do púlpito** e ninguém está mais falando. Durante a
+     pregação o programa aprende quanto de pessoa essa câmera mostra (o pregador e os músicos ao fundo); quando o
+     pregador sai, a medida cai para menos da metade por 1 min. Os músicos que continuam no palco não atrapalham. Por
+     ela vale até a despedida sem "shalom";
+   - sem essa câmera, ou se ela não conseguir decidir: **3 min sem fala** depois de "shalom" + despedida (só música
+     ou silêncio).
 
    Se depois da despedida continuam orando ou falando, a live segue; sem nada disso em 10 min, desarma. Nas lives de
    janeiro a abril de 2026 a despedida veio por volta das **12:30** (de 12:21 a 12:55).
