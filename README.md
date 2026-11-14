@@ -228,9 +228,16 @@ Sem TV na porta: responda "Não temos" no tour (ou desligue em Ajustes) e ela n�
 
 ## 12. Câmeras no OBS e fundo com câmera no telão
 
-- **Várias câmeras** (placas HDMI→USB): cada uma vira uma fonte "Dispositivo de captura de vídeo" no OBS, e o nome
-  diz o papel: **Aberta**, **Fechada**, **Móvel**, **Público**. **Ajustes › Câmeras no OBS** monta as cenas, e o
-  Copilot corta sozinho no ritmo da música (na pregação, só aberta e fechada).
+- **Várias câmeras** (placas HDMI→USB): cada uma vira uma fonte "Dispositivo de captura de vídeo" no OBS. O Copilot
+  descobre sozinho, **pela imagem**, qual é cada uma, e cada papel vai para uma câmera só:
+  - **Fechada**: a imagem dela aparece ampliada dentro da imagem de outra (é o zoom do palco), com rosto grande;
+  - **Aberta**: o palco largo, parada, e contém a imagem da fechada;
+  - **Móvel**: a imagem balança (câmera na mão ou no gimbal);
+  - **Público**: muitos rostos virados para a câmera.
+
+  O nome da fonte (Aberta, Fechada, Móvel, Público) ajuda, mas não é preciso. **Ajustes › Câmeras no OBS** monta as
+  cenas e já descobre os papéis; durante o culto o programa continua olhando e corrige sozinho. O Copilot corta no
+  ritmo da música (na pregação, só aberta e fechada).
 - **Placa de corte** (ATEM, Blackmagic, DeckLink, Roland…): o corte é feito nela, então o corte automático do Copilot
   fica desligado.
 - **Halation e bloom**: brilho de cinema nas luzes, ajustável em Ajustes.
