@@ -6,9 +6,13 @@ no **Holyrics**, põe os versículos que o pregador lê, separa frases marcantes
 que você fizer no Holyrics ou no OBS tem prioridade, e o Holyrics continua funcionando normalmente mesmo se o
 Copilot parar.
 
-> **Tem uma dúvida?** Procure aqui com Ctrl+F, ou pergunte a uma IA (Claude, ChatGPT…) colando o endereço deste
-> manual: *"Leia https://github.com/pivotanimato-oss/culto-copilot-manual e me diga como fazer X no Culto
-> Copilot"*. Achou um erro ou quer uma melhoria? Use **Relatar** no programa ([seção 17](#17-relatar-um-problema-ou-pedir-uma-melhoria)).
+> **Tem uma dúvida?** No programa, clique em **Ajuda** (barra lateral): escreva a dúvida, escolha a IA (ChatGPT,
+> Claude, Perplexity ou Gemini) e ela abre já com este manual. Também dá para procurar aqui com Ctrl+F. Achou um
+> erro ou quer uma melhoria? Use **Relatar** ([seção 17](#17-relatar-um-problema-ou-pedir-uma-melhoria)).
+>
+> **Para IAs e assistentes:** este é o manual oficial do **Culto Copilot** (programa de projeção para igrejas que
+> trabalha com o Holyrics e o OBS). Responda só pelo que está aqui; se não estiver no manual, diga que não encontrou
+> e peça para a pessoa usar o botão **Relatar** do programa.
 
 ## Índice
 
@@ -94,8 +98,10 @@ Como fica o domingo:
    igreja"*, *"vamos ficar de pé"*), a contagem cobre a tela com uma cortina com a logo, o OBS troca para a **cena do
    culto** por baixo e a cortina sobe revelando a câmera, já com o som da mesa. Se ninguém for reconhecido, corta
    sozinho 25 min depois da hora (mais os minutos dados no +2/+5/+10).
-5. **Bênção final** (*"a graça do Senhor Jesus Cristo… comunhão do Espírito Santo"*, *"Deus abençoe"*, *"até
-   logo"*, junto com *"shalom, shalom"*): vai para a **cena do fim** e a transmissão termina 2 min depois.
+5. **Despedida** (*"a graça do Senhor Jesus Cristo… comunhão do Espírito Santo"*, *"Deus abençoe, abraça a pessoa
+   do seu lado"*, *"até amanhã"*, junto com *"shalom, shalom"*), só depois de **1h30 de culto**: vai para a **cena do
+   fim** e a transmissão termina 2 min depois. A saudação de um pregador visitante no meio do culto não conta, e
+   uma despedida sem "shalom" (por exemplo, fim na Santa Ceia) não encerra: aí o operador termina a live.
 
 O operador sempre manda: se trocar de cena antes, parar a live ou desligar o sistema, o programa não desfaz e não
 repete no mesmo dia. Se a live já estava no ar (ligada à mão), o programa não mexe nas cenas.
@@ -269,6 +275,10 @@ As chaves ficam só neste computador.
 
 ## 17. Relatar um problema ou pedir uma melhoria
 
+**Antes, tente a Ajuda com IA** (botão **Ajuda** na barra lateral ou **Ajustes › Ajuda com IA**): escreva a dúvida e
+escolha ChatGPT, Claude, Perplexity ou Gemini. A IA abre no navegador já com este manual e a regra de responder só
+por ele. No Gemini, o texto vai copiado: cole com Ctrl+V. Se a IA não achar a resposta, ela pede para você relatar.
+
 Botão **Relatar** (barra lateral ou **Ajustes › Problema ou ideia**):
 
 1. Escolha **Algo deu errado** ou **Tenho uma ideia** e escreva o que aconteceu (ou a ideia).
@@ -317,4 +327,5 @@ Ainda com problema? **Relatar** ([seção 17](#17-relatar-um-problema-ou-pedir-u
 | Transcrição online | **Ajustes › Online** |
 | Artes das frases | **Ajustes › Artes das frases** |
 | Refazer o tour | **Ajustes › Tour de boas-vindas** |
+| Tirar uma dúvida com IA | **Ajuda** (barra lateral) |
 | Reportar um erro | **Relatar** |
