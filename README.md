@@ -98,10 +98,15 @@ Como fica o domingo:
    igreja"*, *"vamos ficar de pé"*), a contagem cobre a tela com uma cortina com a logo, o OBS troca para a **cena do
    culto** por baixo e a cortina sobe revelando a câmera, já com o som da mesa. Se ninguém for reconhecido, corta
    sozinho 25 min depois da hora (mais os minutos dados no +2/+5/+10).
-5. **Despedida** (*"a graça do Senhor Jesus Cristo… comunhão do Espírito Santo"*, *"Deus abençoe, abraça a pessoa
-   do seu lado"*, *"até amanhã"*, junto com *"shalom, shalom"*), só depois de **1h30 de culto**: vai para a **cena do
-   fim** e a transmissão termina 2 min depois. A saudação de um pregador visitante no meio do culto não conta, e
-   uma despedida sem "shalom" (por exemplo, fim na Santa Ceia) não encerra: aí o operador termina a live.
+5. **Fim da live**: a despedida (*"a graça do Senhor Jesus Cristo… comunhão"*, *"Deus abençoe, abraça a pessoa do
+   seu lado"*, *"até amanhã"*, junto com *"shalom, shalom"*), só depois de **1h30 de culto**, **arma** o fim. A live
+   termina (cena do fim e, 2 min depois, a transmissão para) quando o culto acabou mesmo:
+   - com a câmera **Fechada** (a do pregador): o **pregador desceu do púlpito** (1 min sem ninguém) e ninguém está
+     mais falando; aí vale até a despedida sem "shalom";
+   - sem essa câmera: **3 min sem fala** depois da despedida (só música ou silêncio).
+
+   Se depois da despedida continuam orando ou falando, a live segue; sem nada disso em 10 min, desarma. Nas lives de
+   janeiro a abril de 2026 a despedida veio por volta das **12:30** (de 12:21 a 12:55).
 
 O operador sempre manda: se trocar de cena antes, parar a live ou desligar o sistema, o programa não desfaz e não
 repete no mesmo dia. Se a live já estava no ar (ligada à mão), o programa não mexe nas cenas.
