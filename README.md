@@ -102,9 +102,10 @@ Como fica o domingo:
    seu lado"*, *"até amanhã"*, junto com *"shalom, shalom"*), só depois de **1h30 de culto**, **arma** o fim. A live
    termina (cena do fim e, 2 min depois, a transmissão para) quando o culto acabou mesmo:
    - com a câmera **Fechada** (a do pregador): o **pregador desceu do púlpito** e ninguém está mais falando. Durante a
-     pregação o programa aprende quanto de pessoa essa câmera mostra (o pregador e os músicos ao fundo); quando o
-     pregador sai, a medida cai para menos da metade por 1 min. Os músicos que continuam no palco não atrapalham. Por
-     ela vale até a despedida sem "shalom";
+     pregação o programa **grava o rosto do pregador do dia** (o maior rosto da câmera Fechada enquanto ele fala); o
+     pregador desceu = o rosto dele sumiu da câmera por 1 min. O rosto dos músicos que ficam no palco não é parecido
+     e não confunde. Sem o rosto (de costas, câmera longe), o programa usa a quantidade de pessoa na imagem: cai para
+     menos da metade da pregação por 1 min. Pela câmera vale até a despedida sem "shalom";
    - sem essa câmera, ou se ela não conseguir decidir: **3 min sem fala** depois de "shalom" + despedida (só música
      ou silêncio).
 
