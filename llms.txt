@@ -1,0 +1,6 @@
+# Culto Copilot — manual
+
+> Manual do Culto Copilot, programa que escuta o culto e cuida da projeção no Holyrics, da transmissão no OBS
+> (letra, versículo, oferta, contagem, câmeras), da live no YouTube e da TV da entrada. Em português.
+
+- [Manual completo](README.md): passo a passo de tudo, problemas comuns e onde fica cada coisa no programa.
