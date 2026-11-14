@@ -269,10 +269,17 @@ selfie e recebe as fotos em que aparece.
 
 ## 15. Celular e tablet
 
-- **App no celular** (ícone de celular na Operação): aponte a câmera, abra e ative os avisos (sistema ligou e
-  desligou, erros, live no ar, câmera no ar, arte pronta).
-- **Painel no tablet**: pelo celular ou tablet dá para aceitar sugestões, aprovar frases e trocar slides. Precisa
-  estar no **mesmo Wi-Fi** e com o sistema ligado.
+Um QR só (ícone de celular na Operação › **Celular: painel e avisos**), com o sistema ligado e o celular no
+**mesmo Wi-Fi**:
+
+1. Aponte a câmera do celular: abre o **painel do operador** (aceitar sugestões, aprovar frases, trocar slides).
+2. Toque na **bolinha** em cima, na logo: **verde** = avisos ligados neste celular (sistema ligou e desligou, live
+   no ar, câmera no ar, erros, arte pronta); **cinza** = desligados; **vermelha** = bloqueados (libere as
+   notificações do site nas configurações do celular). Dá para ligar ou desligar a qualquer momento.
+3. No menu do navegador, **Adicionar à tela inicial**: o painel vira um app com ícone. No iPhone, os avisos só
+   funcionam pelo ícone da tela inicial.
+
+Os avisos chegam mesmo com o painel fechado.
 
 ---
 
