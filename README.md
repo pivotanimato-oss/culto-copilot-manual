@@ -172,9 +172,10 @@ Agendador de Tarefas do Windows ("Culto Copilot - abrir para a live").
   fica em **Ajustes › Artes das frases**.
 - Frase aprovada pode ir ao chat da live no YouTube ([seção 13](#13-youtube)) e ao app do celular.
 - A arte já é feita enquanto a frase espera na fila: ao aprovar, ela vai ao telão na hora.
-- **ARCA 57**: quando alguém chama para se inscrever na ARCA durante o culto ("já fez a sua inscrição na ARCA?"),
-  o QR Code do link de inscrição vai ao telão por 40 s (não cobre letra de música; depois, 10 min sem repetir).
-  Preencha o link em **Ajustes › Pré-culto › Link de inscrição da ARCA 57**; vazio, não mostra. Para mostrar na hora:
+- **ARCA 57**: quando alguém chama para se inscrever na ARCA durante o culto ("já fez a sua inscrição na ARCA?") ou
+  fala da ARCA junto com a data ("dia 18, 19 e 20 de dezembro"), o QR Code do link de inscrição vai ao telão por 40 s
+  (não cobre letra de música; depois, 10 min sem repetir). Na Manancial o link já vem preenchido
+  (arca57-conference.vercel.app); muda em **Ajustes › Pré-culto › Link de inscrição da ARCA 57** (vazio = não mostra). Para mostrar na hora:
   **Ajustes › OBS › Testar › QR da ARCA 57 no telão**.
 
 ---
