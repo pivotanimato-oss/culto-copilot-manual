@@ -194,6 +194,8 @@ Agendador de Tarefas do Windows ("Culto Copilot - abrir para a live").
 - **Faixas pretas** de cinema por cima: a letra e o QR ficam dentro da área visível.
 - **Testar o OBS**: botões mostram cada coisa por 10 s e voltam ao que estava.
 - Datas especiais mudam o visual sozinhas: **ARCA 57** (18 a 20/12/2026), **Natal** (25/12) e **virada** (31/12).
+  O painel do versículo também: nos outros dias ele é **branco e liso**; nas datas, no visual do tema (e a moldura
+  em volta da câmera na mesma cor).
 
 ---
 
