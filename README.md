@@ -194,8 +194,8 @@ Agendador de Tarefas do Windows ("Culto Copilot - abrir para a live").
 - **Faixas pretas** de cinema por cima: a letra e o QR ficam dentro da área visível.
 - **Testar o OBS**: botões mostram cada coisa por 10 s e voltam ao que estava.
 - Datas especiais mudam o visual sozinhas: **ARCA 57** (18 a 20/12/2026), **Natal** (25/12) e **virada** (31/12).
-  O painel do versículo também: nos outros dias ele é **branco e liso**; nas datas, no visual do tema (e a moldura
-  em volta da câmera na mesma cor).
+  O painel do versículo também: nos outros dias ele é **branco e liso**; nas datas, no visual do tema (Natal: a gota
+  da logo grande, metade para fora à esquerda, e o granulado; ARCA 57: o palco do cartaz com a logo da conferência).
 
 ---
 
@@ -246,6 +246,11 @@ Sem TV na porta: responda "Não temos" no tour (ou desligue em Ajustes) e ela n�
 - **Halation e bloom**: brilho de cinema nas luzes, ajustável em Ajustes.
 - **Fundo com câmera no telão**: o fundo das músicas vira uma página por trás do Holyrics, com a câmera entrando
   misturada em alguns momentos.
+- **Telão vazio na palavra** (ligado de fábrica, precisa de duas telas): quando a pregação tem tema (dado em Frases
+  ou percebido pela IA), o programa monta uma **arte com o tema**, sobre uma foto buscada para ele (fotos de licença
+  livre). Sempre que não há nada no telão, aparece essa arte em vez da área de trabalho. Trocou o nome da pregação:
+  a arte é refeita. Na palavra, com o telão vazio, a **câmera** entra em alguns momentos por cima da arte. As fotos
+  achadas também aparecem com mais frequência no fundo das artes das frases.
 
 ---
 
