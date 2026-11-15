@@ -281,6 +281,20 @@ Um QR só (ícone de celular na Operação › **Celular: painel e avisos**), co
 
 Os avisos chegam mesmo com o painel fechado.
 
+### Celular como microfone (reserva se o som der problema)
+
+1. No painel do celular, toque no **microfone** (ao lado da bolinha) e permita o microfone. Ele fica **verde**:
+   o celular já está mandando o áudio ao computador, pronto para a troca. Fica ligado até tocar de novo e volta
+   sozinho ao reabrir o painel.
+2. Se o som da mesa der problema: no programa, **Início › entrada de áudio › Celular (microfone remoto)** (grupo
+   "Reserva"). A troca é na hora, sem parar o culto. No celular o microfone fica **vermelho** = é a entrada do culto.
+3. Som da mesa de volta: escolha a entrada de antes no mesmo seletor.
+
+Cuidados: deixe a **tela do celular acesa com o painel na frente** (o celular corta o microfone de apps em
+segundo plano); carregador ligado; perto de quem fala ou da caixa de som. Abra pelo QR (endereço seguro): pelo
+endereço comum o celular não libera o microfone. Amarelo = microfone ligado, mas sem conexão com o computador
+(Wi-Fi ou sistema desligado); volta sozinho.
+
 ---
 
 ## 16. Transcrição e IA pela internet
@@ -325,6 +339,7 @@ Botão **Relatar** (barra lateral ou **Ajustes › Problema ou ideia**):
 | A câmera não entrou na saudação | Troque a cena no OBS à mão; o programa não desfaz. |
 | A contagem está na hora errada | **Ajustes › OBS › Contagem › Início do culto** e os **dias**; para hoje, use +2/+5/+10. |
 | Painel não abre no tablet | Mesmo Wi-Fi e sistema ligado. |
+| Som da mesa parou | Microfone no celular ligado (verde) e, no programa, entrada **Celular (microfone remoto)** ([seção 15](#15-celular-e-tablet)). |
 | O programa não abre | Menu Iniciar › Culto Copilot › **Reparar instalação**. |
 | O notebook desligou | Religue, abra o programa e **Ligar o sistema**. |
 | Qualquer dúvida no meio do culto | **PARAR AUTOMAÇÃO** e siga pelo Holyrics. O culto não depende do Copilot. |
