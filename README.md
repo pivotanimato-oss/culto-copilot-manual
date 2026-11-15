@@ -41,7 +41,8 @@ Copilot parar.
 ## 1. Primeira vez
 
 1. Rode o instalador **CultoCopilot-Setup.exe** no computador da projeção. Ele cria o atalho **Culto Copilot** na
-   Área de Trabalho. As atualizações chegam sozinhas depois.
+   Área de Trabalho. As atualizações chegam sozinhas depois: ao abrir o programa, a cada 30 min com o sistema
+   desligado e a janela fechada ou minimizada, e antes de o sistema ligar sozinho no domingo.
 2. Abra o programa. O **tour de boas-vindas** pergunta, em poucas telas:
    - **O que a sua igreja usa?** Se vocês **fazem live** (OBS/YouTube) e se têm uma **TV na porta da igreja**. Sem
      live, o programa não procura o OBS; sem TV, a TV da entrada fica desligada.
@@ -338,6 +339,7 @@ Botão **Relatar** (barra lateral ou **Ajustes › Problema ou ideia**):
 | A live não começou sozinha | Veja o aviso no celular: sem sinal de câmera, OBS fechado ou o programa não estava aberto às 8h. Comece pelo OBS normalmente. |
 | A câmera não entrou na saudação | Troque a cena no OBS à mão; o programa não desfaz. |
 | A contagem está na hora errada | **Ajustes › OBS › Contagem › Início do culto** e os **dias**; para hoje, use +2/+5/+10. |
+| TV da entrada com barras coloridas | Câmera sem sinal fica fora da TV (ficam as fotos). Se aparecer, confira a versão em Ajustes › Atualização. |
 | Painel não abre no tablet | Mesmo Wi-Fi e sistema ligado. |
 | Som da mesa parou | Microfone no celular ligado (verde) e, no programa, entrada **Celular (microfone remoto)** ([seção 15](#15-celular-e-tablet)). |
 | O programa não abre | Menu Iniciar › Culto Copilot › **Reparar instalação**. |
