@@ -177,6 +177,16 @@ Agendador de Tarefas do Windows ("Culto Copilot - abrir para a live").
   (não cobre letra de música; depois, 10 min sem repetir). Na Manancial o link já vem preenchido
   (arca57-conference.vercel.app); muda em **Ajustes › Pré-culto › Link de inscrição da ARCA 57** (vazio = não mostra). Para mostrar na hora:
   **Ajustes › OBS › Testar › QR da ARCA 57 no telão**.
+- Ao **Aprovar** ou **Descartar**, a decisão vale na hora; depois aparece "por quê?" (opcional: **Enviar** ou **Pular**).
+
+### Galeria do telão e da live
+
+- Abaixo das frases (no celular, na aba **Arte**): **Enviar fotos ou vídeos** e a galeria com tudo o que foi enviado.
+- **Exibir** põe o arquivo no telão e na live na hora; **Parar** (ou **Parar de exibir**) tira. O vídeo toca uma vez e
+  fica no último quadro até parar. **✕** apaga da galeria.
+- No telão o vídeo sai com som pela **Saída de som da projeção** (Início, embaixo do áudio que o sistema ouve, e no
+  tutorial): escolha a saída do computador ligada na mesa por cabo. Na live o vídeo entra sem som (o som chega pela mesa).
+- O telão precisa da página do fundo aberta na segunda tela (abre sozinha com o culto).
 
 ---
 
