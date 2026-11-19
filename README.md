@@ -81,12 +81,15 @@ Em **Ajustes › OBS › Contagem e pré-culto** ficam os campos (na Manancial j
 |---|---|---|
 | **Ligar tudo sozinho** | `domingo 08:00` | O Windows abre o programa 2 min antes; na hora o sistema liga (mesma entrada de áudio da última vez) e o OBS abre, para os telões já terem imagem. |
 | **Iniciar a live sozinha** | `domingo 10:00` | Põe o OBS na cena do pré-live (com a contagem por cima) e começa a transmitir. |
+| **Visibilidade da live** | `pública` | `pública` ou `não listada`: a live já nasce assim no YouTube. O culto de teste é sempre não listada. |
 | **Cena do pré-live** | `PRE-LIVE` | Onde a live começa (vídeo e música do pré-live, sem o som da mesa). |
 | **Cena do culto** | `CAMERA` | Entra na saudação de abertura: câmera e som da mesa. |
 | **Cena do fim** | `FINALIZAR` | Entra na bênção final; a transmissão termina 2 min depois. |
 | **Título da live** | `domingo: 🔴MANHÃ DE GLÓRIA - {data} \| {tema} \| CAMNCL` | O título no YouTube; `{data}` vira 15-11 e `{tema}` o tema da pregação. Uma linha sem dia vale para os outros dias. |
 
 Vários horários: separe com `;` (ex.: `domingo 10:00; quarta 19h30`). Vazio = não faz.
+
+Datas com horário próprio ligam sozinhas também fora do dia da semana: **ARCA 57** sexta 18/12 e sábado 19/12 às 20h (tudo liga às 18h) e domingo 20/12 às 10h. O Windows abre o programa nessas datas sozinho.
 
 Como fica o domingo:
 
@@ -198,6 +201,8 @@ Agendador de Tarefas do Windows ("Culto Copilot - abrir para a live").
 - **PARAR AUTOMAÇÃO** (painel): para tudo na hora; o mesmo botão vira **RETOMAR**.
 - **Culto de validação** (Operação): você opera o Holyrics sozinho, sem aceitar sugestões, e o sistema grava o que
   teria feito, para medir. Depois: **Fluxo › Validação › Avaliar**.
+- **Iniciar culto de teste** (Operação, ao lado do culto de validação): tudo funciona normalmente, mas a live do
+  YouTube fica **não listada** (só vê quem tem o link). Enquanto durar, aparece o selo **TESTE** ao lado do título.
 
 ---
 
@@ -212,6 +217,9 @@ Agendador de Tarefas do Windows ("Culto Copilot - abrir para a live").
 - Datas especiais mudam o visual sozinhas: **ARCA 57** (18 a 20/12/2026), **Natal** (25/12) e **virada** (31/12).
   O painel do versículo também: nos outros dias ele é **branco e liso**; nas datas, no visual do tema (Natal: a gota
   da logo grande, metade para fora à esquerda, e o granulado; ARCA 57: o palco do cartaz com a logo da conferência).
+- **Virada do ano** (31/12): às 23:59:30 o **telão** mostra sozinho a contagem de 30 s no visual da virada e, à
+  meia-noite, fogos com "Feliz ano novo". Só no telão (a live não muda); precisa da segunda tela. Depois, é só seguir
+  com a próxima letra ou versículo.
 
 ---
 
@@ -280,6 +288,8 @@ Sem TV na porta: responda "Não temos" no tour (ou desligue em Ajustes) e ela n�
   das artes da igreja.
 - **Chat**: a frase aprovada vai ao chat da live uma vez.
 - **Momentos**: os capítulos do culto (louvor, músicas, palavra, oferta, tópicos) na descrição.
+- **Lives preparadas antes** (ex.: ARCA 57, com título e thumbnail próprios): o programa não troca o título nem a
+  thumbnail delas no dia, só usa a live.
 
 ---
 
