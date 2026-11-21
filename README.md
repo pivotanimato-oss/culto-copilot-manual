@@ -41,9 +41,12 @@ Copilot parar.
 ## 1. Primeira vez
 
 1. Rode o instalador **CultoCopilot-Setup.exe** no computador da projeção. Ele cria o atalho **Culto Copilot** na
-   Área de Trabalho. As atualizações chegam sozinhas depois: ao abrir o programa, a cada 30 min com o sistema
+   Área de Trabalho, que abre o **Culto Copilot.exe** da pasta do programa (com o ícone dele; para fixar na barra
+   de tarefas: botão direito no atalho › Afixar na barra de tarefas). As atualizações chegam sozinhas depois: ao abrir o programa, a cada 30 min com o sistema
    desligado e a janela fechada ou minimizada, e antes de o sistema ligar sozinho no domingo.
 2. Abra o programa. O **tour de boas-vindas** pergunta, em poucas telas:
+   - **Quantos computadores cuidam do culto?** Só este, ou mais de um (som, telão e live em computadores
+     diferentes). Veja [Vários computadores](#vários-computadores-som-telão-e-live-em-computadores-diferentes).
    - **O que a sua igreja usa?** Se vocês **fazem live** (OBS/YouTube) e se têm uma **TV na porta da igreja**. Sem
      live, o programa não procura o OBS; sem TV, a TV da entrada fica desligada.
    - **Quando são os cultos?** Os dias da semana e o horário do culto principal. A contagem e a TV da entrada só
@@ -53,6 +56,32 @@ Copilot parar.
    - Se você já vê as letras de perto, quanto da projeção o Copilot assume (100% automático ou só sugestões) e se
      vai controlar também pelo celular.
 3. Para refazer o tour: **Ajustes › Tour de boas-vindas › Refazer**.
+
+### Vários computadores: som, telão e live em computadores diferentes
+
+Se a igreja já tem um computador com o cabo da mesa de som, outro com o Holyrics no telão e outro com o OBS da live,
+o Copilot trabalha com eles do jeito que estão, sem trocar cabo. Instale o Copilot em todos.
+
+1. No computador que vai **emprestar** o que tem (o ajudante): no tour, ou em **Ajustes › Computadores**, escolha
+   **Este computador ajuda o principal**. Aparece um **código de 6 números**. Deixe o Copilot aberto ali (pode
+   minimizar; ele abre sozinho quando o Windows liga). Se o Windows perguntar sobre a rede, clique em
+   **Permitir acesso**.
+2. No computador **principal** (onde o Copilot ouve, transcreve e decide): escolha **Este é o principal; outros
+   computadores ajudam**, toque em **Procurar computadores** e digite o código do ajudante. Se ele não aparecer,
+   digite o endereço dele (aparece embaixo do código) e procure de novo.
+3. Em **Quem faz o quê**, diga onde fica cada função:
+   - **Som da mesa**: o computador com o cabo da mesa e a entrada de lá. O som chega pela rede e aparece na
+     Operação como **Outro computador: nome**.
+   - **Projeção (Holyrics e telão)**: o Holyrics de lá mostra letras, versículos e frases. As artes, fotos e fundos
+     são copiados para lá sozinhos, e a página do fundo do telão abre na tela do telão de lá. Ligue a API no Holyrics
+     de lá e cole o token no principal (**Ajustes › Holyrics**).
+   - **Live (OBS)**: o OBS de lá recebe a letra, a contagem, as câmeras e o início e fim da live. Toque de novo em
+     **Letra no OBS** e **Contagem no OBS** depois de mudar.
+4. Vale a partir do próximo culto ligado.
+
+A transcrição (a parte pesada) roda no principal. O quadro mostra a placa de vídeo de cada computador; se um ajudante
+for bem mais forte, ele sugere trocar (o mais forte como principal). Os computadores precisam estar na mesma rede.
+O ajudante não se atualiza enquanto o principal usa o som, o Holyrics ou o OBS dele.
 
 Notebook: deixe **no carregador** e num modo de energia **equilibrado** (com bateria gasta, o modo desempenho pode
 desligar o computador).
