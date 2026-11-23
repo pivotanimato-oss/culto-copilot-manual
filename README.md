@@ -109,7 +109,7 @@ Em **Ajustes › OBS › Contagem e pré-culto** ficam os campos (na Manancial j
 | Campo | Exemplo | O que faz |
 |---|---|---|
 | **Ligar tudo sozinho** | `domingo 08:00` | O Windows abre o programa 2 min antes; na hora o sistema liga (mesma entrada de áudio da última vez) e o OBS abre, para os telões já terem imagem. |
-| **Iniciar a live sozinha** | `domingo 10:00` | Põe o OBS na cena do pré-live (com a contagem por cima) e começa a transmitir. |
+| **Iniciar a live sozinha** | `domingo 10:00` | Põe o OBS na cena do pré-live (com a contagem por cima) e começa a transmitir. Confere se o OBS entrou mesmo no ar. Com a conta do YouTube conectada no OBS (o aviso *"No Broadcast Configured"*), o programa grava a chave da live no OBS e tira a conta de lá (o YouTube do Copilot cuida do título e do chat). |
 | **Visibilidade da live** | `pública` | `pública` ou `não listada`: a live já nasce assim no YouTube. O culto de teste é sempre não listada. |
 | **Cena do pré-live** | `PRE-LIVE` | Onde a live começa (vídeo e música do pré-live, sem o som da mesa). |
 | **Cena do culto** | `CAMERA` | Entra na saudação de abertura: câmera e som da mesa. |
@@ -302,7 +302,8 @@ Sem TV na porta: responda "Não temos" no tour (ou desligue em Ajustes) e ela n�
 - **Telão vazio na palavra** (ligado de fábrica, precisa de duas telas): quando a pregação tem tema (dado em Frases
   ou percebido pela IA), o programa monta uma **arte com o tema**, sobre uma foto buscada para ele (fotos de licença
   livre). Sempre que não há nada no telão, aparece essa arte em vez da área de trabalho. Trocou o nome da pregação:
-  a arte é refeita. Na palavra, com o telão vazio, a **câmera** entra em alguns momentos por cima da arte. As fotos
+  a arte é refeita. Antes da arte ficar pronta (e se o vídeo de uma música não tocar), vai uma foto escura de culto, nunca o preto.
+  Na palavra, com o telão vazio, a **câmera** entra em alguns momentos por cima da arte, devagar e presa no mesmo rosto. As fotos
   achadas também aparecem com mais frequência no fundo das artes das frases.
 
 ---
@@ -316,7 +317,7 @@ Sem TV na porta: responda "Não temos" no tour (ou desligue em Ajustes) e ela n�
 - **Thumbnail**: frase de efeito da pregação + a foto que a mídia manda pelo QR **"Foto da thumbnail"**, no estilo
   das artes da igreja.
 - **Chat**: a frase aprovada vai ao chat da live uma vez.
-- **Momentos**: os capítulos do culto (louvor, músicas, palavra, oferta, tópicos) na descrição.
+- **Momentos**: os capítulos do culto na descrição, por tipo de momento: *Momento de adoração* (com a música), *Palavra* (com o tema), cada **leitura** com a referência (*"Leitura: Atos 16:21-26"*), cada **tópico** com os versículos citados nele, oferta, *Chamamento*, *Novos filhos*, *Oração da família* e outros que a IA reconhecer.
 - **Lives preparadas antes** (ex.: ARCA 57, com título e thumbnail próprios): o programa não troca o título nem a
   thumbnail delas no dia, só usa a live.
 
