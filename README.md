@@ -254,7 +254,7 @@ Agendador de Tarefas do Windows ("Culto Copilot - abrir para a live").
 
 ## 10. Contagem regressiva e pré-culto
 
-**Ajustes › OBS › Contagem e pré-culto**: a fonte **Culto Copilot · Contagem** no OBS (e no telão, se quiser).
+**Ajustes › OBS › Contagem e pré-culto**: a fonte **Culto Copilot · Contagem** no OBS. A mesma contagem e os slides aparecem **no telão** sozinhos, pela página do fundo, sempre que o Holyrics está vazio antes do culto (qualquer letra ou versículo fica por cima). Depois da hora, a primeira coisa posta no Holyrics encerra a contagem no telão. Quando o sistema liga sozinho pelo horário, um versículo esquecido no telão de outro culto sai.
 
 - Mais de 15 min antes: slides de pré-culto (boas-vindas, primeira vez, redes, horários, Kids, oferta com QR,
   oração, avisos…) se revezam com o vídeo do pré-live. Faltando 15 min: o cartão da contagem. No último minuto, a
