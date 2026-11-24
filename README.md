@@ -365,12 +365,19 @@ Sem TV na porta: responda "Não temos" no tour (ou desligue em Ajustes) e ela n�
     mais perto e mais aberto; termina seco, sem fade (o fade deixava ouvir o começo da fala seguinte). Em metade dos
     cortes, a **frase de efeito** sai com **voz de telefone** (nunca uma frase qualquer). O louvor fica sem cortes,
     só a imagem do louvor.
-  - **Palavra, legenda**: cada bloco fecha no fim da frase (a frase seguinte começa um bloco novo) e só sai da
-    tela depois de a última palavra entrar inteira e ficar uns 0,6 s parada, para dar tempo de ler.
+  - **Palavra, legenda**: anda no tempo da voz (cada palavra aparece quando é dita, inteira em até 0,17 s) e cada
+    bloco fecha no fim da frase. Como nos cortes da Zion e da Poiema, o formato **muda ao longo do vídeo** (nunca 3
+    vezes o mesmo seguido): a palavra forte **gigante** em caixa alta condensada (bege), a **pilha** pequena/grande/
+    pequena, a **escada** (a primeira palavra grande, o resto deslocado), a palavra **solta** em lugares diferentes da
+    tela e o da Poiema (pequenas + a grande, o destaque na serifa colorida). Blocos só de "querido", "entenda" ficam
+    sem legenda, para respirar.
   - **Palavra, trilha** (dois de cada três cortes): a voz é separada do que estava tocando na igreja (modelo
     MDX-Net, baixado uma vez, ~65 MB), entra uma música de fundo calma, que **para seca na frase de efeito** (só a
     voz) e volta **outra música já num ponto animado** logo depois, com um riser antes e um boom (impact) na
-    entrada. As duas músicas já entram na parte forte. As músicas vêm da pasta do Pré-culto **"Pasta das músicas de fundo dos cortes"** (vazia =
+    entrada. As duas músicas já entram na parte forte. Riser e boom são **arquivos de verdade** da pasta do
+    Pré-culto **"Pasta dos efeitos sonoros dos cortes"** (vazia = `data\efeitos`): o tipo sai do nome do arquivo ou
+    da pasta (riser, rise, swell, build... / impact, boom, hit, braam, drop... / whoosh, swoosh, transition...) ou, sem
+    pista no nome, do formato do som. Sem arquivos, sai sem efeitos. As músicas vêm da pasta do Pré-culto **"Pasta das músicas de fundo dos cortes"** (vazia =
     `data\musicas_fundo`); arquivo que não abre fica de fora. Atenção: música com direitos autorais pode ser
     reclamada pelo YouTube (o vídeo fica sem som ou sem monetização); use músicas que a igreja pode usar.
   - **Palavra, B-roll**: quando ele fala de algo que dá imagem (tempestade, mar, família...), entram 1 ou 2 vídeos
