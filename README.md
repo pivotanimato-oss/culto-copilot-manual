@@ -321,9 +321,46 @@ Sem TV na porta: responda "Não temos" no tour (ou desligue em Ajustes) e ela n�
 - **Thumbnail**: frase de efeito da pregação + a foto que a mídia manda pelo QR **"Foto da thumbnail"**, no estilo
   das artes da igreja.
 - **Chat**: a frase aprovada vai ao chat da live uma vez.
+- **Voltar na live (DVR)**: o programa liga o DVR da live antes de ela começar, para quem assiste poder voltar.
+  Live que já entrou no ar sem DVR (só o quadradinho do "ao vivo" no player) não muda mais: o programa avisa, e a
+  igreja liga em YouTube Studio › Transmitir › Configurações › **DVR** para as próximas.
 - **Momentos**: os capítulos do culto na descrição, por tipo de momento: *Momento de adoração* (com a música), *Palavra* (com o tema), cada **leitura** com a referência (*"Leitura: Atos 16:21-26"*), cada **tópico** com os versículos citados nele, oferta, *Chamamento*, *Novos filhos*, *Oração da família* e outros que a IA reconhecer.
-- **Lives preparadas antes** (ex.: ARCA 57, com título e thumbnail próprios): o programa não troca o título nem a
-  thumbnail delas no dia, só usa a live.
+- **Lives preparadas antes** (com título e thumbnail próprios): o programa não troca o título nem a thumbnail delas
+  no dia, só usa a live.
+- **Lives da ARCA 57** (título com "Arca", como "Manancial PMW - Arca 57", ou nas datas da conferência): a mídia
+  manda a foto da palavra pelo QR **"Foto da thumbnail"** e a thumbnail sai no **design da ARCA** (pessoa recortada
+  à esquerda com luz vermelha, ARCA57, a frase grande, a linha vermelha e o nome do pregador). Ela vai para a live,
+  mesmo a preparada antes (o título dela continua o mesmo), e para o corte da palavra.
+- **Corte da palavra**: com a live no ar, o OBS grava (se ninguém já estava gravando). Quando a live acaba, a
+  **pregação principal** (a mais longa, com 10 min ou mais; uma por live) vira um vídeo no canal, com a **mesma
+  thumbnail da live**, título com o **tema e o nome do pregador** e, na descrição, o link do culto completo e os
+  tópicos. Na ARCA, o título sai como `{tema} | {pregador} - Arca 57`. Ajustes › OBS: **"Corte da
+  palavra no YouTube"** (sim/não) e **"Título do corte"** (padrão `{tema} | {pregador}`; também `{data}`). Na
+  primeira vez o programa baixa o ffmpeg (~140 MB). A gravação inteira fica na pasta de gravação do OBS.
+- **Cortes do culto** (YouTube e Instagram): depois do corte da palavra, da mesma gravação do OBS, sai o **máximo
+  de cortes bons** do louvor e da palavra principal, uns **verticais** e outros **horizontais**, intercalados:
+  - **Verticais** (Shorts/Reels, 20 a 60 s): os trechos mais fortes da palavra (as frases de efeito do culto e, com
+    a chave do LLM, a escolha dele) e o refrão de cada música. Pessoa enquadrada pelo rosto, sem as faixas pretas de
+    cinema, cor de cinema e a legenda palavra por palavra no estilo da Poiema (Inter Display, e Instrument Serif
+    itálica em Jesus, Deus, Senhor, Cristo, Espírito e reino; a palavra de destaque numa serifa itálica pesada em
+    amarelo, vermelho ou verde-limão; cada letra entra borrada e fica nítida). Alternam **tela cheia** e **faixa**
+    (o vídeo horizontal no meio da tela preta, a legenda ao lado da pessoa).
+  - **Horizontais** (como a live): trechos de 1 a 5 min da palavra (um por tópico da pregação, ou escolhidos pelo
+    LLM) e as **músicas inteiras**, com thumbnail no modelo da live (o título e o rosto do melhor quadro).
+  - **Semana**: os cortes sobem **agendados** e o YouTube publica sozinho, 2 por dia a partir do dia seguinte (campo
+    **"Horários das postagens"**, padrão `12:00, 19:00`), por 7 dias. A cota da API de cada igreja dá uns 5 envios
+    por dia (o corte da palavra é um): o que não couber sobe no dia seguinte em que o programa estiver aberto (ele
+    confere a fila de meia em meia hora). Horário que passou com o PC desligado vai para o próximo livre.
+  - Ajustes › OBS › **Cortes do culto**: cada corte com o vídeo, o formato, quando vai ao ar, **Baixar**, **Copiar
+    legenda** (texto do post para o Instagram) e **Não postar** (tira da agenda; se já subiu, fica privado no
+    YouTube). Pré-culto: **"Cortes do culto"** (sim/não), **"Máximo de cortes por culto"** (padrão 12),
+    **"Estilo dos reels"** (tela cheia, faixa ou os dois), **"Postar os cortes no YouTube ao longo da semana"**
+    (padrão sim) e **"Horários das postagens"**. Arquivos em `data/reels/AAAA-MM-DD/`.
+  - A gravação do OBS liga se o corte da palavra **ou** os cortes estiverem ligados, e sempre para quando a live
+    acaba.
+  - O projeto do Google da igreja precisa estar **verificado** pelo YouTube para os vídeos enviados pela API
+    ficarem públicos (projeto não verificado: o YouTube trava como privado). Se o corte da palavra já aparece
+    público no canal, está verificado.
 
 ---
 
