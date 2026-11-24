@@ -51,7 +51,10 @@ Copilot parar.
      live, o programa não procura o OBS; sem TV, a TV da entrada fica desligada.
    - **Quando são os cultos?** Os dias da semana e o horário do culto principal. A contagem e a TV da entrada só
      aparecem nesses dias.
-   - **De onde vem o som do culto?** A entrada de áudio (o som da mesa).
+   - **De onde vem o som do culto?** A entrada de áudio (o som da mesa). Com a mesa ligada no computador por USB
+     (multitrack) e o REAPER aberto com o projeto do MixCopilot, escolha **REAPER (multitrack)**: o REAPER manda pela
+     rede do próprio computador (ReaStream, faixa "Culto Copilot") a voz limpa dos cantores para as letras e o mic do
+     pregador para a Bíblia e as frases, cada um no seu canal, sem a banda por cima.
    - **Conectar o Holyrics**: o token da API (no Holyrics: *Arquivo › Configurações › API Server*).
    - Se você já vê as letras de perto, quanto da projeção o Copilot assume (100% automático ou só sugestões) e se
      vai controlar também pelo celular.
