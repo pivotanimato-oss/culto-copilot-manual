@@ -353,14 +353,24 @@ Sem TV na porta: responda "Não temos" no tour (ou desligue em Ajustes) e ela n�
     termina quando ela conclui: nunca logo depois de "olha como termina", "vou te explicar", numa pergunta sem a
     resposta ou num "E se...". O vídeo abre com um **gancho**: a frase mais forte ou polêmica (se ela não for a
     primeira, entra antes, e depois o trecho começa).
-  - **Palavra, edição**: as pausas da fala são cortadas (corte seco, com um crossfade curto no som para não comer
-    o "s" nem o fim das frases); a cada corte o take alterna entre mais perto e mais aberto; termina seco, sem fade
-    (o fade deixava ouvir o começo da fala seguinte). Em metade dos cortes, uma frase do meio sai com **voz de
-    telefone**. O louvor fica sem cortes, só a imagem do louvor.
+  - **Palavra, pelo Claude** (Pré-culto **"Cortes da palavra planejados pelo Claude"** = sim): no fim da live o
+    programa escreve um pedido (a pregação em frases numeradas e as instruções) em `data/reels/AAAA-MM-DD/claude/` e
+    os cortes esperam o plano do Claude por até 48 h (depois, saem pelo LLM do programa). O Claude escolhe os cortes,
+    o gancho, a frase de efeito, o telefone e o B-roll, e **corrige a transcrição** das frases usadas (a legenda sai
+    com o texto certo, no tempo da voz). Dois jeitos de chegar ao Claude: um **agendamento do Claude** no PC (de 2
+    em 2 horas lê os pedidos pendentes e grava o plano; o programa confere de meia em meia hora e faz os vídeos), ou
+    em Ajustes › Cortes do culto, **"Copiar pedido para o Claude"**, colar no Claude e **"Colar o plano do Claude"**.
+  - **Palavra, edição**: as pausas da fala são cortadas (corte seco, com um crossfade curto no som; cada palavra
+    guarda 0,18 s antes e 0,22 s depois, para não comer o começo nem o "s" final); a cada corte o take alterna entre
+    mais perto e mais aberto; termina seco, sem fade (o fade deixava ouvir o começo da fala seguinte). Em metade dos
+    cortes, a **frase de efeito** sai com **voz de telefone** (nunca uma frase qualquer). O louvor fica sem cortes,
+    só a imagem do louvor.
+  - **Palavra, legenda**: cada bloco fecha no fim da frase (a frase seguinte começa um bloco novo) e só sai da
+    tela depois de a última palavra entrar inteira e ficar uns 0,6 s parada, para dar tempo de ler.
   - **Palavra, trilha** (dois de cada três cortes): a voz é separada do que estava tocando na igreja (modelo
     MDX-Net, baixado uma vez, ~65 MB), entra uma música de fundo calma, que **para seca na frase de efeito** (só a
-    voz) e volta **outra música já num ponto animado** logo depois, com um riser antes e um impact na entrada, bem
-    baixinhos. As músicas vêm da pasta do Pré-culto **"Pasta das músicas de fundo dos cortes"** (vazia =
+    voz) e volta **outra música já num ponto animado** logo depois, com um riser antes e um boom (impact) na
+    entrada. As duas músicas já entram na parte forte. As músicas vêm da pasta do Pré-culto **"Pasta das músicas de fundo dos cortes"** (vazia =
     `data\musicas_fundo`); arquivo que não abre fica de fora. Atenção: música com direitos autorais pode ser
     reclamada pelo YouTube (o vídeo fica sem som ou sem monetização); use músicas que a igreja pode usar.
   - **Palavra, B-roll**: quando ele fala de algo que dá imagem (tempestade, mar, família...), entram 1 ou 2 vídeos
@@ -381,7 +391,8 @@ Sem TV na porta: responda "Não temos" no tour (ou desligue em Ajustes) e ela n�
     YouTube). Pré-culto: **"Cortes do culto"** (sim/não), **"Máximo de cortes por culto"** (padrão 12),
     **"Estilo dos reels"** (tela cheia, faixa ou os dois), **"Postar os cortes no YouTube ao longo da semana"**
     (padrão sim), **"Horários das postagens"**, **"Também cortes horizontais no YouTube"** (padrão não),
-    **"Música de fundo em parte dos cortes da palavra"** (padrão sim), **"Pasta das músicas de fundo dos cortes"** e
+    **"Cortes da palavra planejados pelo Claude"** (padrão não), **"Música de fundo em parte dos cortes da
+    palavra"** (padrão sim), **"Pasta das músicas de fundo dos cortes"** e
     **"B-roll do Pexels nos cortes da palavra"** (padrão sim). Arquivos em `data/reels/AAAA-MM-DD/`.
   - A gravação do OBS liga se o corte da palavra **ou** os cortes estiverem ligados, e sempre para quando a live
     acaba.
