@@ -374,10 +374,7 @@ Sem TV na porta: responda "Não temos" no tour (ou desligue em Ajustes) e ela n�
   - **Palavra, trilha** (dois de cada três cortes): a voz é separada do que estava tocando na igreja (modelo
     MDX-Net, baixado uma vez, ~65 MB), entra uma música de fundo calma, que **para seca na frase de efeito** (só a
     voz) e volta **outra música já num ponto animado** logo depois, com um riser antes e um boom (impact) na
-    entrada. As duas músicas já entram na parte forte. Riser e boom são **arquivos de verdade** da pasta do
-    Pré-culto **"Pasta dos efeitos sonoros dos cortes"** (vazia = `data\efeitos`): o tipo sai do nome do arquivo ou
-    da pasta (riser, rise, swell, build... / impact, boom, hit, braam, drop... / whoosh, swoosh, transition...) ou, sem
-    pista no nome, do formato do som. Sem arquivos, sai sem efeitos. As músicas vêm da pasta do Pré-culto **"Pasta das músicas de fundo dos cortes"** (vazia =
+    entrada. As duas músicas já entram na parte forte. Riser, boom e whoosh são **efeitos de verdade que vêm com o programa** (18 sons CC0 do Freesound, em `arte\efeitos`, com a origem de cada um no LEIA-ME de lá), alinhados pelo pico: o riser chega ao auge onde a música para, o boom bate quando a outra música entra e o whoosh passa no corte do gancho para o começo do trecho. Para usar efeitos próprios: Pré-culto › **"Pasta dos efeitos sonoros dos cortes"** (o tipo sai do nome do arquivo ou da pasta: riser, boom, impact, hit, whoosh...). As músicas vêm da pasta do Pré-culto **"Pasta das músicas de fundo dos cortes"** (vazia =
     `data\musicas_fundo`); arquivo que não abre fica de fora. Atenção: música com direitos autorais pode ser
     reclamada pelo YouTube (o vídeo fica sem som ou sem monetização); use músicas que a igreja pode usar.
   - **Palavra, B-roll**: quando ele fala de algo que dá imagem (tempestade, mar, família...), entram 1 ou 2 vídeos
