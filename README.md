@@ -337,16 +337,23 @@ Sem TV na porta: responda "Não temos" no tour (ou desligue em Ajustes) e ela n�
   tópicos. Na ARCA, o título sai como `{tema} | {pregador} - Arca 57`. Ajustes › OBS: **"Corte da
   palavra no YouTube"** (sim/não) e **"Título do corte"** (padrão `{tema} | {pregador}`; também `{data}`). Na
   primeira vez o programa baixa o ffmpeg (~140 MB). A gravação inteira fica na pasta de gravação do OBS.
-- **Cortes do culto** (YouTube e Instagram): depois do corte da palavra, da mesma gravação do OBS, sai o **máximo
-  de cortes bons** do louvor e da palavra principal, uns **verticais** e outros **horizontais**, intercalados:
-  - **Verticais** (Shorts/Reels, 20 a 60 s): os trechos mais fortes da palavra (as frases de efeito do culto e, com
-    a chave do LLM, a escolha dele) e o refrão de cada música. Pessoa enquadrada pelo rosto, sem as faixas pretas de
-    cinema, cor de cinema e a legenda palavra por palavra no estilo da Poiema (Inter Display, e Instrument Serif
-    itálica em Jesus, Deus, Senhor, Cristo, Espírito e reino; a palavra de destaque numa serifa itálica pesada em
-    amarelo, vermelho ou verde-limão; cada letra entra borrada e fica nítida). Alternam **tela cheia** e **faixa**
-    (o vídeo horizontal no meio da tela preta, a legenda ao lado da pessoa).
-  - **Horizontais** (como a live): trechos de 1 a 5 min da palavra (um por tópico da pregação, ou escolhidos pelo
-    LLM) e as **músicas inteiras**, com thumbnail no modelo da live (o título e o rosto do melhor quadro).
+- **Cortes do culto** (Shorts e Reels: o mesmo vídeo vai para os dois): depois do corte da palavra, da mesma
+  gravação do OBS, sai o **máximo de cortes bons** do louvor e da palavra principal, todos **verticais**, intercalados:
+  - **Verticais** (20 a 60 s): os trechos mais fortes da palavra (as frases de efeito do culto e, com a chave do LLM,
+    a escolha dele) e o refrão de cada música. Cor de cinema, sem as faixas pretas, e a legenda palavra por palavra no
+    estilo da Poiema (Inter Display, e Instrument Serif itálica em Jesus, Deus, Senhor, Cristo, Espírito e reino; a
+    palavra de destaque numa serifa itálica pesada em amarelo, vermelho ou verde-limão; cada letra entra borrada e
+    fica nítida). Alternam **tela cheia** e **faixa** (o vídeo horizontal no meio da tela preta, a legenda do lado
+    oposto ao rosto).
+  - **Câmera**: segue o rosto como um operador, suave e sem tranco: fica parada enquanto a pessoa está perto do
+    meio, antecipa quando ela anda e mantém o rosto sempre nos **70% do meio** da imagem. Na palavra, segue o
+    **pregador** pelo rosto que a live aprendeu no culto (não o músico que estiver mais perto da câmera).
+  - **Louvor**: a legenda é a letra do telão **conferida com o que foi cantado** (a transcrição): se o detector errou
+    o slide ou a música na hora, aquele trecho não vira corte. Aparece **só a linha que está sendo cantada**, na
+    hora em que foi cantada. O enquadramento do louvor nunca pega o canto de baixo à esquerda, onde fica a letra da
+    própria live.
+  - **Horizontais** (só com **"Também cortes horizontais no YouTube"** = sim no Pré-culto; padrão não): trechos de 1
+    a 5 min da palavra e as músicas inteiras (até 5 min), com thumbnail no modelo da live.
   - **Semana**: os cortes sobem **agendados** e o YouTube publica sozinho, 2 por dia a partir do dia seguinte (campo
     **"Horários das postagens"**, padrão `12:00, 19:00`), por 7 dias. A cota da API de cada igreja dá uns 5 envios
     por dia (o corte da palavra é um): o que não couber sobe no dia seguinte em que o programa estiver aberto (ele
@@ -355,7 +362,8 @@ Sem TV na porta: responda "Não temos" no tour (ou desligue em Ajustes) e ela n�
     legenda** (texto do post para o Instagram) e **Não postar** (tira da agenda; se já subiu, fica privado no
     YouTube). Pré-culto: **"Cortes do culto"** (sim/não), **"Máximo de cortes por culto"** (padrão 12),
     **"Estilo dos reels"** (tela cheia, faixa ou os dois), **"Postar os cortes no YouTube ao longo da semana"**
-    (padrão sim) e **"Horários das postagens"**. Arquivos em `data/reels/AAAA-MM-DD/`.
+    (padrão sim), **"Horários das postagens"** e **"Também cortes horizontais no YouTube"** (padrão não). Arquivos
+    em `data/reels/AAAA-MM-DD/`.
   - A gravação do OBS liga se o corte da palavra **ou** os cortes estiverem ligados, e sempre para quando a live
     acaba.
   - O projeto do Google da igreja precisa estar **verificado** pelo YouTube para os vídeos enviados pela API
