@@ -348,9 +348,24 @@ Sem TV na porta: responda "Não temos" no tour (ou desligue em Ajustes) e ela n�
   - **Câmera**: segue o rosto como um operador, suave e sem tranco: fica parada enquanto a pessoa está perto do
     meio, antecipa quando ela anda e mantém o rosto sempre nos **70% do meio** da imagem. Na palavra, segue o
     **pregador** pelo rosto que a live aprendeu no culto (não o músico que estiver mais perto da câmera).
+  - **Palavra, o trecho**: uma ideia completa, de 36 a 75 s antes da edição (os Shorts da Poiema vão de 13 a 76 s,
+    mediana de 27 s). Começa onde a ideia começa (nunca em "e", "então", "mas", "isso" ou num resto de frase) e
+    termina quando ela conclui: nunca logo depois de "olha como termina", "vou te explicar", numa pergunta sem a
+    resposta ou num "E se...". O vídeo abre com um **gancho**: a frase mais forte ou polêmica (se ela não for a
+    primeira, entra antes, e depois o trecho começa).
   - **Palavra, edição**: as pausas da fala são cortadas (corte seco, com um crossfade curto no som para não comer
-    o "s" nem o fim das frases) e, a cada corte, o take alterna entre mais perto e mais aberto, para dar ritmo.
-    O louvor fica sem cortes, só a imagem do louvor.
+    o "s" nem o fim das frases); a cada corte o take alterna entre mais perto e mais aberto; termina seco, sem fade
+    (o fade deixava ouvir o começo da fala seguinte). Em metade dos cortes, uma frase do meio sai com **voz de
+    telefone**. O louvor fica sem cortes, só a imagem do louvor.
+  - **Palavra, trilha** (dois de cada três cortes): a voz é separada do que estava tocando na igreja (modelo
+    MDX-Net, baixado uma vez, ~65 MB), entra uma música de fundo calma, que **para seca na frase de efeito** (só a
+    voz) e volta **outra música já num ponto animado** logo depois, com um riser antes e um impact na entrada, bem
+    baixinhos. As músicas vêm da pasta do Pré-culto **"Pasta das músicas de fundo dos cortes"** (vazia =
+    `data\musicas_fundo`); arquivo que não abre fica de fora. Atenção: música com direitos autorais pode ser
+    reclamada pelo YouTube (o vídeo fica sem som ou sem monetização); use músicas que a igreja pode usar.
+  - **Palavra, B-roll**: quando ele fala de algo que dá imagem (tempestade, mar, família...), entram 1 ou 2 vídeos
+    curtos do **Pexels** (grátis, uso livre), escolhidos pela IA. Precisa da chave do Pexels: crie em
+    pexels.com/api e cole em Ajustes › Online › Chaves próprias › **Pexels**. Sem a chave, sai sem B-roll.
   - **Louvor**: a legenda é a letra do telão **conferida com o que foi cantado** (a transcrição): se o detector errou
     o slide ou a música na hora, aquele trecho não vira corte. Aparece **só a linha que está sendo cantada**, na
     hora em que foi cantada. O enquadramento do louvor nunca pega o canto de baixo à esquerda, onde fica a letra da
@@ -365,8 +380,9 @@ Sem TV na porta: responda "Não temos" no tour (ou desligue em Ajustes) e ela n�
     legenda** (texto do post para o Instagram) e **Não postar** (tira da agenda; se já subiu, fica privado no
     YouTube). Pré-culto: **"Cortes do culto"** (sim/não), **"Máximo de cortes por culto"** (padrão 12),
     **"Estilo dos reels"** (tela cheia, faixa ou os dois), **"Postar os cortes no YouTube ao longo da semana"**
-    (padrão sim), **"Horários das postagens"** e **"Também cortes horizontais no YouTube"** (padrão não). Arquivos
-    em `data/reels/AAAA-MM-DD/`.
+    (padrão sim), **"Horários das postagens"**, **"Também cortes horizontais no YouTube"** (padrão não),
+    **"Música de fundo em parte dos cortes da palavra"** (padrão sim), **"Pasta das músicas de fundo dos cortes"** e
+    **"B-roll do Pexels nos cortes da palavra"** (padrão sim). Arquivos em `data/reels/AAAA-MM-DD/`.
   - A gravação do OBS liga se o corte da palavra **ou** os cortes estiverem ligados, e sempre para quando a live
     acaba.
   - O projeto do Google da igreja precisa estar **verificado** pelo YouTube para os vídeos enviados pela API
