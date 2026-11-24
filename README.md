@@ -348,6 +348,9 @@ Sem TV na porta: responda "Não temos" no tour (ou desligue em Ajustes) e ela n�
   - **Câmera**: segue o rosto como um operador, suave e sem tranco: fica parada enquanto a pessoa está perto do
     meio, antecipa quando ela anda e mantém o rosto sempre nos **70% do meio** da imagem. Na palavra, segue o
     **pregador** pelo rosto que a live aprendeu no culto (não o músico que estiver mais perto da câmera).
+  - **Palavra, edição**: as pausas da fala são cortadas (corte seco, com um crossfade curto no som para não comer
+    o "s" nem o fim das frases) e, a cada corte, o take alterna entre mais perto e mais aberto, para dar ritmo.
+    O louvor fica sem cortes, só a imagem do louvor.
   - **Louvor**: a legenda é a letra do telão **conferida com o que foi cantado** (a transcrição): se o detector errou
     o slide ou a música na hora, aquele trecho não vira corte. Aparece **só a linha que está sendo cantada**, na
     hora em que foi cantada. O enquadramento do louvor nunca pega o canto de baixo à esquerda, onde fica a letra da
