@@ -406,6 +406,11 @@ Sem TV na porta: responda "Não temos" no tour (ou desligue em Ajustes) e ela n�
     **"Cortes da palavra planejados pelo Claude"** (padrão não), **"Música de fundo em parte dos cortes da
     palavra"** (padrão sim), **"Pasta das músicas de fundo dos cortes"** e
     **"B-roll do Pexels nos cortes da palavra"** (padrão sim). Arquivos em `data/reels/AAAA-MM-DD/`.
+  - **Som da mix do REAPER:** quando existe a mix do culto feita no REAPER (MixCopilot), os cortes usam o som dela no
+    lugar do som cru da gravação do OBS. O programa acha cada corte dentro da mix pela forma do som (não precisa
+    começar junto com a gravação) e acompanha o escorregar do relógio entre os dois. Procura na pasta de
+    **"Pasta (ou arquivo WAV) da mix do REAPER"** ou, vazia, em `C:\Multitracks\AAAA-MM-DD*` e nas gravações do
+    MixCopilot: um WAV com "mix" ou "master" no nome. Sem mix, fica o som da gravação.
   - A gravação do OBS liga se o corte da palavra **ou** os cortes estiverem ligados, e sempre para quando a live
     acaba.
   - O projeto do Google da igreja precisa estar **verificado** pelo YouTube para os vídeos enviados pela API
