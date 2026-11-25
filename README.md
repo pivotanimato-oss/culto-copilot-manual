@@ -411,6 +411,11 @@ Sem TV na porta: responda "Não temos" no tour (ou desligue em Ajustes) e ela n�
     começar junto com a gravação) e acompanha o escorregar do relógio entre os dois. Procura na pasta de
     **"Pasta (ou arquivo WAV) da mix do REAPER"** ou, vazia, em `C:\Multitracks\AAAA-MM-DD*` e nas gravações do
     MixCopilot: um WAV com "mix" ou "master" no nome. Sem mix, fica o som da gravação.
+    Com o multitrack na mesma pasta, a palavra usa o **microfone de quem fala** (voz limpa, sem a banda) e o louvor
+    usa a mix com os **microfones de voz por cima** (o vocal à frente).
+  - Todos os cortes da palavra têm música de fundo (volume constante, até o fim). O **gancho** (ou a primeira frase)
+    tem a legenda amarela e maior e abre com uma batida; cada pedaço começa no ataque da voz. No louvor, a legenda
+    acompanha cada palavra cantada e a câmera fica na mesma pessoa.
   - A gravação do OBS liga se o corte da palavra **ou** os cortes estiverem ligados, e sempre para quando a live
     acaba.
   - O projeto do Google da igreja precisa estar **verificado** pelo YouTube para os vídeos enviados pela API
