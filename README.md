@@ -363,7 +363,10 @@ Sem TV na porta: responda "Não temos" no tour (ou desligue em Ajustes) e ela n�
     em Ajustes › Cortes do culto, **"Copiar pedido para o Claude"**, colar no Claude e **"Colar o plano do Claude"**.
   - **Palavra, edição**: as pausas da fala são cortadas (corte seco, com um crossfade curto no som; cada palavra
     guarda 0,18 s antes e 0,22 s depois, para não comer o começo nem o "s" final; palavra cortada pela metade, como "Cri..." antes de "Cristo", sai da
-    legenda e do áudio); a cada corte o take alterna entre
+    legenda e do áudio). O áudio de cada corte é **ouvido de novo** pelo Whisper local (no processador, se o modelo
+    já estiver no PC): os cortes de pausa e a legenda seguem o tempo preciso de cada palavra (a transcrição ao vivo
+    chega até 0,7 s atrasada e cortava o começo das palavras), e a **frase dita duas vezes seguidas** ("Nada de
+    resto pra Ele. Nada de resto pra Ele.") fica uma vez só, porque no corte soa como o mesmo take repetido; a cada corte o take alterna entre
     mais perto e mais aberto; termina seco, sem fade (o fade deixava ouvir o começo da fala seguinte). Em metade dos
     cortes, a **frase de efeito** sai com **voz de telefone** ou com **reverb** (a voz ecoa, como num auditório, no
     silêncio da música); nunca numa frase qualquer. O louvor fica sem cortes,
