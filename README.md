@@ -352,16 +352,18 @@ Sem TV na porta: responda "Não temos" no tour (ou desligue em Ajustes) e ela n�
     mediana de 27 s). Começa onde a ideia começa (nunca em "e", "então", "mas", "isso" ou num resto de frase) e
     termina quando ela conclui: nunca logo depois de "olha como termina", "vou te explicar", numa pergunta sem a
     resposta ou num "E se...". O vídeo abre com um **gancho**: a frase mais forte ou polêmica (se ela não for a
-    primeira, entra antes, e depois o trecho começa).
+    primeira, entra antes, e depois o trecho começa; no meio, essa frase não se repete).
   - **Palavra, pelo Claude** (Pré-culto **"Cortes da palavra planejados pelo Claude"** = sim): no fim da live o
     programa escreve um pedido (a pregação em frases numeradas e as instruções) em `data/reels/AAAA-MM-DD/claude/` e
     os cortes esperam o plano do Claude por até 48 h (depois, saem pelo LLM do programa). O Claude escolhe os cortes,
     o gancho, a frase de efeito, o telefone e o B-roll, e **corrige a transcrição** das frases usadas (a legenda sai
-    com o texto certo, no tempo da voz). Dois jeitos de chegar ao Claude: um **agendamento do Claude** no PC (de 2
-    em 2 horas lê os pedidos pendentes e grava o plano; o programa confere de meia em meia hora e faz os vídeos), ou
+    com o texto certo, no tempo da voz). Dois jeitos de chegar ao Claude: um **agendamento do Claude** no PC (aos
+    domingos, depois do culto, lê os pedidos pendentes e grava o plano; o programa confere de meia em meia hora e faz
+    os vídeos), ou
     em Ajustes › Cortes do culto, **"Copiar pedido para o Claude"**, colar no Claude e **"Colar o plano do Claude"**.
   - **Palavra, edição**: as pausas da fala são cortadas (corte seco, com um crossfade curto no som; cada palavra
-    guarda 0,18 s antes e 0,22 s depois, para não comer o começo nem o "s" final); a cada corte o take alterna entre
+    guarda 0,18 s antes e 0,22 s depois, para não comer o começo nem o "s" final; palavra cortada pela metade, como "Cri..." antes de "Cristo", sai da
+    legenda e do áudio); a cada corte o take alterna entre
     mais perto e mais aberto; termina seco, sem fade (o fade deixava ouvir o começo da fala seguinte). Em metade dos
     cortes, a **frase de efeito** sai com **voz de telefone** ou com **reverb** (a voz ecoa, como num auditório, no
     silêncio da música); nunca numa frase qualquer. O louvor fica sem cortes,
