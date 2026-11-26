@@ -23,7 +23,7 @@ Copilot parar.
 5. [Louvor](#5-louvor)
 6. [Leitura bíblica](#6-leitura-bíblica)
 7. [Frases de efeito e artes](#7-frases-de-efeito-e-artes)
-8. [Automático, Sugerir e culto de validação](#8-automático-sugerir-e-culto-de-validação)
+8. [Automático, Sugerir e culto de teste](#8-automático-sugerir-e-culto-de-teste)
 9. [OBS: letra, versículo, oferta e redes na transmissão](#9-obs-letra-versículo-oferta-e-redes-na-transmissão)
 10. [Contagem regressiva e pré-culto](#10-contagem-regressiva-e-pré-culto)
 11. [TV da entrada](#11-tv-da-entrada)
@@ -55,10 +55,10 @@ Copilot parar.
      (multitrack) e o REAPER aberto com o projeto do MixCopilot, escolha **REAPER (multitrack)**: o REAPER manda pela
      rede do próprio computador (ReaStream, faixa "Culto Copilot") a voz limpa dos cantores para as letras e o mic do
      pregador para a Bíblia e as frases, cada um no seu canal, sem a banda por cima.
-   - **Conectar o Holyrics**: o token da API (no Holyrics: *Arquivo › Configurações › API Server*).
+   - **Conectar o Holyrics**: o token da API (no Holyrics: *Arquivo › Configurações › API Server › Gerenciar permissões*: adicione um acesso, selecione e clique no **lápis** para marcar as permissões; o token aparece ao lado do nome).
    - Se você já vê as letras de perto, quanto da projeção o Copilot assume (100% automático ou só sugestões) e se
      vai controlar também pelo celular.
-3. Para refazer o tour: **Ajustes › Tour de boas-vindas › Refazer**.
+3. Para refazer o tour: **Ajustes › Geral › Tour de boas-vindas › Refazer**.
 
 ### Vários computadores: som, telão e live em computadores diferentes
 
@@ -94,12 +94,13 @@ desligar o computador).
 ## 2. Domingo passo a passo
 
 1. Abra o **Holyrics** e monte a **playlist do culto** com as músicas na ordem (o Copilot lê a playlist sozinho).
-   Com **Ajustes › Abrir o Holyrics junto** ligado, o programa abre o Holyrics por você.
+   Com **Ajustes › Holyrics › Abrir o Holyrics junto** ligado, o programa abre o Holyrics por você.
 2. Abra o **Culto Copilot**, confira a entrada de áudio e clique em **▶ Ligar o sistema**, de preferência bem antes
    do culto: o sistema já pode ficar ligado no pré-culto. Ele confere o Holyrics, o áudio e o resto; o que fica
    pronto sobe e some da lista. Se algo tiver problema, você decide: **Ligar mesmo assim** ou **Cancelar**.
 3. Pediram mais tempo antes do culto? Em **Operação › Contagem**, toque **+2 min**, **+5 min** ou **+10 min**. A
-   contagem do OBS, do telão e da TV da entrada empurra junto. **Voltar ao horário** desfaz.
+   contagem do OBS, do telão e da TV da entrada empurra junto. **Voltar ao horário** desfaz. Esses botões só aparecem
+   enquanto a contagem está no ar (dia de culto, de 3 h antes até 30 min depois do horário).
 4. No fim, clique em **Desligar**. Se fechar a janela com o sistema ligado, ela volta perguntando: **Desligar o
    sistema e fechar** ou **Deixar ligado**.
 
@@ -107,7 +108,8 @@ desligar o computador).
 
 ## 3. Domingo sozinho: tudo liga, a live começa e termina sem ninguém
 
-Em **Ajustes › OBS › Contagem e pré-culto** ficam os campos (na Manancial já vêm preenchidos):
+Em **Ajustes › Contagem e TV** ficam os campos (na Manancial já vêm preenchidos). Os **dias de culto** dizem quando
+a contagem, a TV da entrada e o resto começam sozinhos; **sem nenhum dia marcado, nada começa sozinho** (você liga na mão).
 
 | Campo | Exemplo | O que faz |
 |---|---|---|
@@ -161,7 +163,7 @@ Agendador de Tarefas do Windows ("Culto Copilot - abrir para a live").
 | Aba | Para que serve |
 |---|---|
 | **Operação** | Ligar/desligar o sistema, entrada de áudio, contagem +2/+5/+10, preparo do culto e, com o sistema ligado, o painel do operador: **Louvor**, **Bíblia** e **Frases** num painel só (música e slide, livro e versículo, aprovar frases), a legenda da fala e o que está no telão. |
-| **Fluxo** | O sistema por dentro: transcrição completa, computador (placa de vídeo, memória, energia), validação e registro. |
+| **Fluxo** | O sistema por dentro, num menu com ícones: fluxo ao vivo, transcrição completa, computador (placa de vídeo, memória, energia), gravações e registro. |
 | **Escriba** | Anotações da pregação no jeito dos escribas da igreja (fidelidade, profética, principal, avisos), com quem ministra e o tema. |
 | **Ajustes** | Holyrics, Online, Bíblia, Automático, Músicas, OBS (contagem, TV, testes, câmeras, halation e bloom), YouTube, Fotos, tour, **Manual online**, **Relatar**, pastas e **Reparar instalação**. |
 | **Relatar** | Contar um problema ou pedir uma melhoria ([seção 17](#17-relatar-um-problema-ou-pedir-uma-melhoria)). |
@@ -204,15 +206,15 @@ Agendador de Tarefas do Windows ("Culto Copilot - abrir para a live").
   **Descartar** (o motivo que você escreve ensina a IA). Nenhuma frase vai ao telão sem aprovação, a não ser que
   **Ajustes › Automático › Frases aprovadas** esteja ligado.
 - Preencha **Pregador** para o nome sair na arte. A arte é montada no estilo da igreja (telão 16:9 e redes 9:16) e
-  fica em **Ajustes › Artes das frases**.
+  fica em **Ajustes › Instalação › Artes das frases**.
 - Frase aprovada pode ir ao chat da live no YouTube ([seção 13](#13-youtube)) e ao app do celular.
 - A arte já é feita enquanto a frase espera na fila: ao aprovar, ela vai ao telão na hora.
-- **Fotos da igreja nas artes**: algumas artes (3 em cada 10) usam uma foto da igreja de fundo, só fotos da galera adorando. Na pasta das fotos da igreja (**Ajustes › OBS › Contagem e pré-culto › Pasta**), dê a essas fotos um nome começando por **adoracao** (ex.: `adoracao-01.jpg`). Retratos e fotos de família ficam com outro nome: aparecem só nos slides da contagem e na TV da entrada.
+- **Fotos da igreja nas artes**: algumas artes (3 em cada 10) usam uma foto da igreja de fundo, só fotos da galera adorando. Na pasta das fotos da igreja (**Ajustes › Contagem e TV › Pasta das fotos**), dê a essas fotos um nome começando por **adoracao** (ex.: `adoracao-01.jpg`). Retratos e fotos de família ficam com outro nome: aparecem só nos slides da contagem e na TV da entrada.
 - **ARCA 57**: quando alguém chama para se inscrever na ARCA durante o culto ("já fez a sua inscrição na ARCA?") ou
   fala da ARCA junto com a data ("dia 18, 19 e 20 de dezembro"), o QR Code do link de inscrição vai ao telão por 40 s
   (não cobre letra de música; depois, 10 min sem repetir). Na Manancial o link já vem preenchido
-  (arca57-conference.vercel.app); muda em **Ajustes › Pré-culto › Link de inscrição da ARCA 57** (vazio = não mostra). Para mostrar na hora:
-  **Ajustes › OBS › Testar › QR da ARCA 57 no telão**.
+  (arca57-conference.vercel.app); muda em **Ajustes › Contagem e TV › Link de inscrição da ARCA 57** (vazio = não mostra). Para mostrar na hora:
+  **Ajustes › Transmissão › Testar › QR da ARCA 57 no telão**.
 - Ao **Aprovar** ou **Descartar**, a decisão vale na hora; depois aparece "por quê?" (opcional: **Enviar** ou **Pular**).
 
 ### Galeria do telão e da live
@@ -226,22 +228,20 @@ Agendador de Tarefas do Windows ("Culto Copilot - abrir para a live").
 
 ---
 
-## 8. Automático, Sugerir e culto de validação
+## 8. Automático, Sugerir e culto de teste
 
 - **Sugerir**: o Copilot sugere e você aceita. **Automático**: ele faz sozinho. Depois de uma ação sua no telão,
   o automático espera 8 s antes de agir de novo.
 - **Ajustes › Automático** (Slides das músicas, Versículos, Frases aprovadas) liga ou desliga cada um desde o começo do culto.
 - **PARAR AUTOMAÇÃO** (painel): para tudo na hora; o mesmo botão vira **RETOMAR**.
-- **Culto de validação** (Operação): você opera o Holyrics sozinho, sem aceitar sugestões, e o sistema grava o que
-  teria feito, para medir. Depois: **Fluxo › Validação › Avaliar**.
-- **Iniciar culto de teste** (Operação, ao lado do culto de validação): tudo funciona normalmente, mas a live do
+- **Iniciar culto de teste** (Operação, ao lado de Ligar o sistema): tudo funciona normalmente, mas a live do
   YouTube fica **não listada** (só vê quem tem o link). Enquanto durar, aparece o selo **TESTE** ao lado do título.
 
 ---
 
 ## 9. OBS: letra, versículo, oferta e redes na transmissão
 
-- **Ajustes › OBS › Letra no OBS**: com o OBS aberto, o programa liga o websocket e cria a fonte **Culto Copilot ·
+- **Ajustes › Transmissão › Letra no OBS**: com o OBS aberto, o programa liga o websocket e cria a fonte **Culto Copilot ·
   Letra** na cena no ar. A letra do telão aparece sozinha na transmissão; também o versículo, a lower third da
   pregação (tema e tópico), a frase aprovada, a **barra da oferta** (IBAN, MB WAY…) e, de vez em quando, o **"Nos
   siga nas redes"** com QR.
@@ -258,7 +258,7 @@ Agendador de Tarefas do Windows ("Culto Copilot - abrir para a live").
 
 ## 10. Contagem regressiva e pré-culto
 
-**Ajustes › OBS › Contagem e pré-culto**: a fonte **Culto Copilot · Contagem** no OBS. A mesma contagem e os slides aparecem **no telão** sozinhos, pela página do fundo, sempre que o Holyrics está vazio antes do culto (qualquer letra ou versículo fica por cima). Depois da hora, a primeira coisa posta no Holyrics encerra a contagem no telão. Quando o sistema liga sozinho pelo horário, um versículo esquecido no telão de outro culto sai.
+**Ajustes › Contagem e TV**: a fonte **Culto Copilot · Contagem** no OBS. A mesma contagem e os slides aparecem **no telão** sozinhos, pela página do fundo, sempre que o Holyrics está vazio antes do culto (qualquer letra ou versículo fica por cima). Depois da hora, a primeira coisa posta no Holyrics encerra a contagem no telão. Quando o sistema liga sozinho pelo horário, um versículo esquecido no telão de outro culto sai.
 
 - Mais de 15 min antes: slides de pré-culto (boas-vindas, primeira vez, redes, horários, Kids, oferta com QR,
   oração, avisos…) se revezam com o vídeo do pré-live. Faltando 15 min: o cartão da contagem. No último minuto, a
@@ -276,7 +276,7 @@ Agendador de Tarefas do Windows ("Culto Copilot - abrir para a live").
 
 Uma TV na porta mostra convites, a contagem e o culto ao vivo, pela rede (sem HDMI).
 
-1. Na TV (navegador), abra uma vez o endereço que aparece em **Ajustes › OBS › Contagem e pré-culto** (algo como
+1. Na TV (navegador), abra uma vez o endereço que aparece em **Ajustes › Contagem e TV** (algo como
    `http://192.168.0.10:8077`). Se não abrir, toque em **Liberar na rede** (regra do firewall).
 2. Aperte **OK** no controle (ou clique) para tela cheia.
 3. Antes do culto: as câmeras com convites para entrar (editáveis em **TV da entrada · convites**). Na contagem:
@@ -295,7 +295,7 @@ Sem TV na porta: responda "Não temos" no tour (ou desligue em Ajustes) e ela n�
   - **Móvel**: a imagem balança (câmera na mão ou no gimbal);
   - **Público**: muitos rostos virados para a câmera.
 
-  O nome da fonte (Aberta, Fechada, Móvel, Público) ajuda, mas não é preciso. **Ajustes › Câmeras no OBS** monta as
+  O nome da fonte (Aberta, Fechada, Móvel, Público) ajuda, mas não é preciso. **Ajustes › Transmissão › Câmeras no OBS** monta as
   cenas e já descobre os papéis; durante o culto o programa continua olhando e corrige sozinho. O Copilot corta no
   ritmo da música (na pregação, só aberta e fechada).
 - **Placa de corte** (ATEM, Blackmagic, DeckLink, Roland…): o corte é feito nela, então o corte automático do Copilot
@@ -314,7 +314,7 @@ Sem TV na porta: responda "Não temos" no tour (ou desligue em Ajustes) e ela n�
 
 ## 13. YouTube
 
-**Ajustes › YouTube da live** (conecte uma vez, com a conta do canal). Depois, sozinho:
+**Ajustes › Transmissão › YouTube da live** (conecte uma vez, com a conta do canal). Depois, sozinho:
 
 - **Título** no padrão do canal, com o tema da pregação assim que a IA souber
   ([seção 3](#3-domingo-sozinho-tudo-liga-a-live-começa-e-termina-sem-ninguém)).
@@ -360,7 +360,7 @@ Sem TV na porta: responda "Não temos" no tour (ou desligue em Ajustes) e ela n�
     com o texto certo, no tempo da voz). Dois jeitos de chegar ao Claude: um **agendamento do Claude** no PC (aos
     domingos, depois do culto, lê os pedidos pendentes e grava o plano; o programa confere de meia em meia hora e faz
     os vídeos), ou
-    em Ajustes › Cortes do culto, **"Copiar pedido para o Claude"**, colar no Claude e **"Colar o plano do Claude"**.
+    em Ajustes › Cortes, **"Copiar pedido para o Claude"**, colar no Claude e **"Colar o plano do Claude"**.
   - **Palavra, edição**: as pausas da fala são cortadas (corte seco, com um crossfade curto no som; cada palavra
     guarda 0,18 s antes e 0,22 s depois, para não comer o começo nem o "s" final; palavra cortada pela metade, como "Cri..." antes de "Cristo", sai da
     legenda e do áudio). O áudio de cada corte é **ouvido de novo** pelo Whisper local (no processador, se o modelo
@@ -387,7 +387,7 @@ Sem TV na porta: responda "Não temos" no tour (ou desligue em Ajustes) e ela n�
     reclamada pelo YouTube (o vídeo fica sem som ou sem monetização); use músicas que a igreja pode usar.
   - **Palavra, B-roll**: quando ele fala de algo que dá imagem (tempestade, mar, família...), entram 1 ou 2 vídeos
     curtos do **Pexels** (grátis, uso livre), escolhidos pela IA. Precisa da chave do Pexels: crie em
-    pexels.com/api e cole em Ajustes › Online › Chaves próprias › **Pexels**. Sem a chave, sai sem B-roll.
+    pexels.com/api e cole em Ajustes › Transcrição › Chaves próprias › **Pexels**. Sem a chave, sai sem B-roll.
   - **Louvor**: a legenda é a letra do telão **conferida com o que foi cantado** (a transcrição): se o detector errou
     o slide ou a música na hora, aquele trecho não vira corte. Aparece **só a linha que está sendo cantada**, na
     hora em que foi cantada. O enquadramento do louvor nunca pega o canto de baixo à esquerda, onde fica a letra da
@@ -398,7 +398,7 @@ Sem TV na porta: responda "Não temos" no tour (ou desligue em Ajustes) e ela n�
     **"Horários das postagens"**, padrão `12:00, 19:00`), por 7 dias. A cota da API de cada igreja dá uns 5 envios
     por dia (o corte da palavra é um): o que não couber sobe no dia seguinte em que o programa estiver aberto (ele
     confere a fila de meia em meia hora). Horário que passou com o PC desligado vai para o próximo livre.
-  - Ajustes › OBS › **Cortes do culto**: cada corte com o vídeo, o formato, quando vai ao ar, **Baixar**, **Copiar
+  - Ajustes › **Cortes**: cada corte com o vídeo, o formato, quando vai ao ar, **Baixar**, **Copiar
     legenda** (texto do post para o Instagram) e **Não postar** (tira da agenda; se já subiu, fica privado no
     YouTube). Pré-culto: **"Cortes do culto"** (sim/não), **"Máximo de cortes por culto"** (padrão 12),
     **"Estilo dos reels"** (tela cheia, faixa ou os dois), **"Postar os cortes no YouTube ao longo da semana"**
@@ -426,7 +426,7 @@ Sem TV na porta: responda "Não temos" no tour (ou desligue em Ajustes) e ela n�
 
 ## 14. Fotos do culto
 
-**Ajustes › Fotos › Fotos do culto**: a mídia só coloca o cartão da câmera no computador. As fotos são editadas
+**Ajustes › Fotos**: a mídia só coloca o cartão da câmera no computador. As fotos são editadas
 sozinhas, as tremidas ficam de fora, e no fim do culto aparece o QR **"Ache suas fotos"**: a pessoa manda uma
 selfie e recebe as fotos em que aparece.
 
@@ -464,7 +464,7 @@ endereço comum o celular não libera o microfone. Amarelo = microfone ligado, m
 
 ## 16. Transcrição e IA pela internet
 
-**Ajustes › Online › Pela internet**: a transcrição e a IA rodam pela internet e o computador fica
+**Ajustes › Transcrição › Pela internet**: a transcrição e a IA rodam pela internet e o computador fica
 de reserva (sem internet, volta sozinho para o local).
 
 1. Chave do **Groq** (grátis): **Abrir o site do Groq** › entre › **API Keys › Create API Key** › copie (começa com
@@ -477,11 +477,11 @@ As chaves ficam só neste computador.
 
 ## 17. Relatar um problema ou pedir uma melhoria
 
-**Antes, tente a Ajuda com IA** (botão **Ajuda** na barra lateral ou **Ajustes › Ajuda com IA**): escreva a dúvida e
+**Antes, tente a Ajuda com IA** (botão **Ajuda** na barra lateral ou **Ajustes › Geral › Ajuda com IA**): escreva a dúvida e
 escolha ChatGPT, Claude, Perplexity ou Gemini. A IA abre no navegador já com este manual e a regra de responder só
 por ele. No Gemini, o texto vai copiado: cole com Ctrl+V. Se a IA não achar a resposta, ela pede para você relatar.
 
-Botão **Relatar** (barra lateral ou **Ajustes › Problema ou ideia**):
+Botão **Relatar** (barra lateral ou **Ajustes › Geral › Problema ou ideia**):
 
 1. Escolha **Algo deu errado** ou **Tenho uma ideia** e escreva o que aconteceu (ou a ideia).
 2. **Apontar na tela**: clique no lugar do programa que deu problema (um botão, um texto…). Ele fica marcado no
@@ -499,11 +499,11 @@ Botão **Relatar** (barra lateral ou **Ajustes › Problema ou ideia**):
 | Sugestão errada | **Recusar**. Se insistir, ponha o módulo em **Desligado** ou use **PARAR AUTOMAÇÃO**. |
 | Transcrição "lenta" ou "manual" | As sugestões atrasam ou param; siga pelo Holyrics. Volta sozinho. |
 | Holyrics fechou ou travou | Reabra o Holyrics; o Copilot reconecta. |
-| A letra não aparece no OBS | **Ajustes › OBS › Letra no OBS** com o OBS aberto (o programa liga o websocket; se pedir, feche e abra o OBS). |
+| A letra não aparece no OBS | **Ajustes › Transmissão › Letra no OBS** com o OBS aberto (o programa liga o websocket; se pedir, feche e abra o OBS). |
 | A live não começou sozinha | Veja o aviso no celular: sem sinal de câmera, OBS fechado ou o programa não estava aberto às 8h. Comece pelo OBS normalmente. |
 | A câmera não entrou na saudação | Troque a cena no OBS à mão; o programa não desfaz. |
-| A contagem está na hora errada | **Ajustes › OBS › Contagem › Início do culto** e os **dias**; para hoje, use +2/+5/+10. |
-| TV da entrada com barras coloridas | Câmera sem sinal fica fora da TV (ficam as fotos). Se aparecer, confira a versão em Ajustes › Atualização. |
+| A contagem está na hora errada | **Ajustes › Contagem e TV › Início do culto** e os **dias**; para hoje, use +2/+5/+10. |
+| TV da entrada com barras coloridas | Câmera sem sinal fica fora da TV (ficam as fotos). Se aparecer, confira a versão em Ajustes › Atualizações. |
 | Painel não abre no tablet | Mesmo Wi-Fi e sistema ligado. |
 | Som da mesa parou | Microfone no celular ligado (verde) e, no programa, entrada **Celular (microfone remoto)** ([seção 15](#15-celular-e-tablet)). |
 | O programa não abre | Menu Iniciar › Culto Copilot › **Reparar instalação**. |
@@ -520,16 +520,16 @@ Ainda com problema? **Relatar** ([seção 17](#17-relatar-um-problema-ou-pedir-u
 |---|---|
 | Ligar antes do culto | **Operação › Ligar o sistema** |
 | Dar mais tempo na contagem | **Operação › Contagem › +2 / +5 / +10 min** |
-| Mudar dias e horário dos cultos | **Ajustes › OBS › Contagem e pré-culto** (ou o tour) |
-| Live sozinha, cenas, título | **Ajustes › OBS › Contagem e pré-culto** |
-| Textos dos slides de pré-culto | **Ajustes › OBS › Contagem e pré-culto** |
-| Convites da TV da entrada | **Ajustes › OBS › Contagem e pré-culto › TV da entrada** |
-| Letra na transmissão | **Ajustes › OBS › Letra no OBS** |
-| Várias câmeras | **Ajustes › Câmeras no OBS** |
-| YouTube | **Ajustes › YouTube da live** |
+| Mudar dias e horário dos cultos | **Ajustes › Contagem e TV** (ou o tour) |
+| Live sozinha, cenas, título | **Ajustes › Contagem e TV** |
+| Textos dos slides de pré-culto | **Ajustes › Contagem e TV** |
+| Convites da TV da entrada | **Ajustes › Contagem e TV › TV da entrada** |
+| Letra na transmissão | **Ajustes › Transmissão › Letra no OBS** |
+| Várias câmeras | **Ajustes › Transmissão › Câmeras no OBS** |
+| YouTube | **Ajustes › Transmissão › YouTube da live** |
 | Fotos do culto | **Ajustes › Fotos** |
-| Transcrição online | **Ajustes › Online** |
-| Artes das frases | **Ajustes › Artes das frases** |
-| Refazer o tour | **Ajustes › Tour de boas-vindas** |
+| Transcrição online | **Ajustes › Transcrição** |
+| Artes das frases | **Ajustes › Instalação › Artes das frases** |
+| Refazer o tour | **Ajustes › Geral › Tour de boas-vindas** |
 | Tirar uma dúvida com IA | **Ajuda** (barra lateral) |
 | Reportar um erro | **Relatar** |
