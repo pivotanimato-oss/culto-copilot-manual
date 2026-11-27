@@ -399,7 +399,7 @@ Sem TV na porta: responda "Não temos" no tour (ou desligue em Ajustes) e ela n�
     por dia (o corte da palavra é um): o que não couber sobe no dia seguinte em que o programa estiver aberto (ele
     confere a fila de meia em meia hora). Horário que passou com o PC desligado vai para o próximo livre.
   - Ajustes › **Cortes**: cada corte com o vídeo, o formato, quando vai ao ar, **Baixar**, **Copiar
-    legenda** (texto do post para o Instagram) e **Não postar** (tira da agenda; se já subiu, fica privado no
+    legenda** (texto do post) e **Não postar** (tira da agenda; se já subiu, fica privado no
     YouTube). Pré-culto: **"Cortes do culto"** (sim/não), **"Máximo de cortes por culto"** (padrão 12),
     **"Estilo dos reels"** (tela cheia, faixa ou os dois), **"Postar os cortes no YouTube ao longo da semana"**
     (padrão sim), **"Horários das postagens"**, **"Também cortes horizontais no YouTube"** (padrão não),
@@ -421,6 +421,21 @@ Sem TV na porta: responda "Não temos" no tour (ou desligue em Ajustes) e ela n�
   - O projeto do Google da igreja precisa estar **verificado** pelo YouTube para os vídeos enviados pela API
     ficarem públicos (projeto não verificado: o YouTube trava como privado). Se o corte da palavra já aparece
     público no canal, está verificado.
+  - **Instagram** (**Ajustes › Transmissão › Instagram dos cortes**): com a conta conectada, os cortes verticais
+    sobem no Instagram **no mesmo horário do Shorts**, com o programa aberto (a API do Instagram não agenda: horário
+    que passou com o PC desligado sobe quando ele abrir). Saem como **reel de teste**: primeiro só para quem não
+    segue; se for bem em até 72 h, o Instagram mostra para os seguidores sozinho. **Teste A/B:** um corte da palavra
+    por culto sai em duas versões, a A abrindo no gancho e a B começando direto (o resto igual); as duas sobem juntas
+    como teste e só a A pode ir para os seguidores (a B só aparece no Instagram, não no Shorts). **3 e 7 dias**
+    depois, o programa guarda os números de cada reel (views, alcance, quanto do vídeo assistem, quantos pulam nos 3
+    primeiros segundos, compartilhamentos, salvamentos e comentários, e as views do mesmo corte no Shorts) e refaz
+    `data/reels/relatorio.md`: os testes A/B, a lista do melhor para o pior e as médias por gancho, música,
+    estilo, tipo, tamanho e horário. Para conectar: a conta do Instagram precisa ser **profissional** (Criador ou
+    Empresa); no **developers.facebook.com** crie um app com o caso de uso **Gerenciar mensagens e conteúdo no
+    Instagram** e, em **Configuração da API com login do Instagram › Gerar tokens de acesso**, adicione a conta e
+    gere o token; cole na página que o botão abre (o programa renova sozinho). Pré-culto: **"Postar os cortes no
+    Instagram ao longo da semana"**, **"Postar no Instagram como reel de teste"** e **"Teste A/B no Instagram"**
+    (padrão sim nos três).
 
 ---
 
@@ -527,6 +542,7 @@ Ainda com problema? **Relatar** ([seção 17](#17-relatar-um-problema-ou-pedir-u
 | Letra na transmissão | **Ajustes › Transmissão › Letra no OBS** |
 | Várias câmeras | **Ajustes › Transmissão › Câmeras no OBS** |
 | YouTube | **Ajustes › Transmissão › YouTube da live** |
+| Instagram dos cortes | **Ajustes › Transmissão › Instagram dos cortes** |
 | Fotos do culto | **Ajustes › Fotos** |
 | Transcrição online | **Ajustes › Transcrição** |
 | Artes das frases | **Ajustes › Instalação › Artes das frases** |
