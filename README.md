@@ -440,7 +440,8 @@ Sem TV na porta: responda "Não temos" no tour (ou desligue em Ajustes) e ela n�
     Access Token** e marque a página e o Instagram da igreja. No **Depurador de token de acesso**, clique em
     **Estender token de acesso** e cole o token novo na página que o botão do programa abre (ele troca pelo token da
     página, que não vence). Com portfólio empresarial, o token da "Configuração da API com login unificado" também
-    serve. Pré-culto: **"Postar os cortes no
+    serve. A Meta corta o acesso 90 dias depois de gerar o token: duas semanas antes, o celular
+    avisa e o botão em Ajustes vira **Reconectar** (gere um token novo e cole de novo). Pré-culto: **"Postar os cortes no
     Instagram ao longo da semana"**, **"Postar no Instagram como reel de teste"** e **"Teste A/B no Instagram"**
     (padrão sim nos três).
 
