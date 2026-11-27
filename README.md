@@ -426,14 +426,21 @@ Sem TV na porta: responda "Não temos" no tour (ou desligue em Ajustes) e ela n�
     que passou com o PC desligado sobe quando ele abrir). Saem como **reel de teste**: primeiro só para quem não
     segue; se for bem em até 72 h, o Instagram mostra para os seguidores sozinho. **Teste A/B:** um corte da palavra
     por culto sai em duas versões, a A abrindo no gancho e a B começando direto (o resto igual); as duas sobem juntas
-    como teste e só a A pode ir para os seguidores (a B só aparece no Instagram, não no Shorts). **3 e 7 dias**
+    como teste e só a A pode ir para os seguidores (a B só aparece no Instagram, não no Shorts). Os cortes em **faixa** vão **deitados** para o Instagram (só a faixa, sem o preto em
+    cima e embaixo; a legenda fica ao lado da pessoa); no Shorts continuam em pé. **3 e 7 dias**
     depois, o programa guarda os números de cada reel (views, alcance, quanto do vídeo assistem, quantos pulam nos 3
     primeiros segundos, compartilhamentos, salvamentos e comentários, e as views do mesmo corte no Shorts) e refaz
     `data/reels/relatorio.md`: os testes A/B, a lista do melhor para o pior e as médias por gancho, música,
     estilo, tipo, tamanho e horário. Para conectar: a conta do Instagram precisa ser **profissional** (Criador ou
-    Empresa); no **developers.facebook.com** crie um app com o caso de uso **Gerenciar mensagens e conteúdo no
-    Instagram** e, em **Configuração da API com login do Instagram › Gerar tokens de acesso**, adicione a conta e
-    gere o token; cole na página que o botão abre (o programa renova sozinho). Pré-culto: **"Postar os cortes no
+    Empresa) e estar ligada à página da igreja no Facebook. No **developers.facebook.com**, crie um app com o caso de
+    uso **Gerenciar mensagens e conteúdo no Instagram** e, em Personalizar › **Configuração da API com login do
+    Facebook**, adicione as permissões de conteúdo (e a **instagram_manage_insights** em Permissões e recursos). Em
+    **Ferramentas › Explorador da Graph API**, marque instagram_basic, instagram_content_publish,
+    instagram_manage_insights, pages_show_list, pages_read_engagement e business_management, clique em **Generate
+    Access Token** e marque a página e o Instagram da igreja. No **Depurador de token de acesso**, clique em
+    **Estender token de acesso** e cole o token novo na página que o botão do programa abre (ele troca pelo token da
+    página, que não vence). Com portfólio empresarial, o token da "Configuração da API com login unificado" também
+    serve. Pré-culto: **"Postar os cortes no
     Instagram ao longo da semana"**, **"Postar no Instagram como reel de teste"** e **"Teste A/B no Instagram"**
     (padrão sim nos três).
 
