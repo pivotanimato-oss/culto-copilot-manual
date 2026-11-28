@@ -337,6 +337,13 @@ Sem TV na porta: responda "Não temos" no tour (ou desligue em Ajustes) e ela n�
   tópicos. Na ARCA, o título sai como `{tema} | {pregador} - Arca 57`. Ajustes › OBS: **"Corte da
   palavra no YouTube"** (sim/não) e **"Título do corte"** (padrão `{tema} | {pregador}`; também `{data}`). Na
   primeira vez o programa baixa o ffmpeg (~140 MB). A gravação inteira fica na pasta de gravação do OBS.
+- **Intro do corte da palavra**: o corte começa com uns 25 s no estilo trailer. A IA lê a pregação e monta o
+  roteiro com as frases do próprio pregador: gancho, tensão, virada e, por último, a frase mais forte. As pausas
+  saem (só fica a fala), o texto grande aparece palavra por palavra (atrás do pregador quando ele está perto da
+  câmera, ao lado dele, e a última em vermelho; preto no telão branco), com música épica e a voz separada, riser,
+  flash nos cortes, B-roll (com a chave do Pexels ou da Pixabay) e um cartão final com o tema e o nome do pregador
+  sobre a textura do tema. Ajustes › OBS: **"Intro no corte da palavra"** (sim/não). Sem a IA, usa as frases
+  fortes do telão (precisa de 2 ou mais); sem elas, o corte vai sem intro.
 - **Cortes do culto** (Shorts e Reels: o mesmo vídeo vai para os dois): depois do corte da palavra, da mesma
   gravação do OBS, sai o **máximo de cortes bons** do louvor e da palavra principal, todos **verticais**, intercalados:
   - **Verticais** (20 a 60 s): os trechos mais fortes da palavra (as frases de efeito do culto e, com a chave do LLM,
@@ -386,8 +393,10 @@ Sem TV na porta: responda "Não temos" no tour (ou desligue em Ajustes) e ela n�
     (vazia = as do programa); arquivo que não abre fica de fora. Atenção: música com direitos autorais pode ser
     reclamada pelo YouTube (o vídeo fica sem som ou sem monetização); use músicas que a igreja pode usar.
   - **Palavra, B-roll**: quando ele fala de algo que dá imagem (tempestade, mar, família...), entram 1 ou 2 vídeos
-    curtos do **Pexels** (grátis, uso livre), escolhidos pela IA. Precisa da chave do Pexels: crie em
-    pexels.com/api e cole em Ajustes › Transcrição › Chaves próprias › **Pexels**. Sem a chave, sai sem B-roll.
+    curtos do **Pexels** ou da **Pixabay** (grátis, uso livre), escolhidos pela IA. Precisa da chave de um dos dois:
+    crie em pexels.com/api ou pixabay.com/api/docs (a chave da Pixabay é a mesma para fotos e vídeos) e cole em
+    Ajustes › Transcrição › Chaves próprias › **Pexels** ou **Pixabay**. Com as duas, o Pexels vem primeiro e a
+    Pixabay cobre o que ele não achar. Sem nenhuma, sai sem B-roll.
   - **Louvor**: a legenda é a letra do telão **conferida com o que foi cantado** (a transcrição): se o detector errou
     o slide ou a música na hora, aquele trecho não vira corte. Aparece **só a linha que está sendo cantada**, na
     hora em que foi cantada. O enquadramento do louvor nunca pega o canto de baixo à esquerda, onde fica a letra da
