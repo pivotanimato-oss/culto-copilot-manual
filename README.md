@@ -424,7 +424,9 @@ Sem TV na porta: responda "Não temos" no tour (ou desligue em Ajustes) e ela n�
   - **Instagram** (**Ajustes › Transmissão › Instagram dos cortes**): com a conta conectada, os cortes verticais
     sobem no Instagram **no mesmo horário do Shorts**, com o programa aberto (a API do Instagram não agenda: horário
     que passou com o PC desligado sobe quando ele abrir). Saem como **reel de teste**: primeiro só para quem não
-    segue; se for bem em até 72 h, o Instagram mostra para os seguidores sozinho. **Teste A/B:** um corte da palavra
+    segue; se for bem em até 72 h, o Instagram mostra para os seguidores sozinho. Se um reel sair para os seguidores em vez de
+    teste, o programa **para de postar** no Instagram, avisa no celular e o botão vira **Ver aviso**; na página do
+    Instagram dos cortes, **Voltar a postar** retoma. **Teste A/B:** um corte da palavra
     por culto sai em duas versões, a A abrindo no gancho e a B começando direto (o resto igual); as duas sobem juntas
     como teste e só a A pode ir para os seguidores (a B só aparece no Instagram, não no Shorts). Os cortes em **faixa** vão **deitados** para o Instagram (só a faixa, sem o preto em
     cima e embaixo; a legenda fica ao lado da pessoa); no Shorts continuam em pé. **3 e 7 dias**
