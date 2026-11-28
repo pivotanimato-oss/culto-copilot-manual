@@ -454,7 +454,12 @@ Sem TV na porta: responda "Não temos" no tour (ou desligue em Ajustes) e ela n�
     serve. A Meta corta o acesso 90 dias depois de gerar o token: duas semanas antes, o celular
     avisa e o botão em Ajustes vira **Reconectar** (gere um token novo e cole de novo). Pré-culto: **"Postar os cortes no
     Instagram ao longo da semana"**, **"Postar no Instagram como reel de teste"** e **"Teste A/B no Instagram"**
-    (padrão sim nos três).
+    (padrão sim nos três). **Pregador como colaborador:** em **Contagem e pré-culto › "Instagram dos pregadores"**, um por linha
+    `Nome do pregador: @usuario` (o nome igual ao do pregador do culto; maiúsculas e acentos não importam). O corte da
+    palavra sai com o pregador convidado como **colaborador**, marcado no vídeo e com `Palavra: @usuario` na legenda.
+    O pregador precisa **aceitar o convite** no app do Instagram para o reel aparecer no perfil dele, e a conta dele
+    precisa ser **pública**. Se o Instagram recusar (conta privada, @ errado), o reel sai sem o colaborador e o aviso
+    fica no registro do programa.
 
 ---
 
